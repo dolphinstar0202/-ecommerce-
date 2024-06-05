@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body {
+    margin: 0;
+}
+
+.Navbar{
+    display: flex;
+    width: full;
+    background-color:#fef5ef;
+    height: 80px;
+}
+
+.companylogo{
+    width: 15%;
+    padding: 0;
+    height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.navicons{
+    width: 55%;
+    height: 50px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 800;
+    padding-left: 20px;
+}
+.wishcartsearchicon{
+    width: 25%;
+    height: 50px;
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.navicons ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.navicons ul li {
+    display: inline;
+    margin-right: 7%; 
+}
+.wishcartsearchicon ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.wishcartsearchicon ul li {
+    display: inline;
+    margin-right: 9%; 
+}

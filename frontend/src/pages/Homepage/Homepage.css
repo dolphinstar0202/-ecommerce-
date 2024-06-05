@@ -1,0 +1,786 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.landing{
+    width: 100%;
+    min-height: 100vh;  
+}
+.homepage{
+    background-image: url("..\..\images\hero-slider\home-1\hero-slider-1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh; 
+}
+.textcenter{
+    position: absolute;
+    top: 67%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.textcenter h4{
+    
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #24262b;
+}
+.textcenter h2{
+    font-size: 58px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 550;
+}
+.textcenter button{
+    margin-top: 40px;
+    width: 130px;
+    height: 44px;
+    padding: 10px 25px 10px 25px;
+    border: 1px solid #24262b;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: #fef5ef ;
+}
+
+
+
+/* code for services offered by company */
+
+.services{
+    width: 86%;
+    display: flex;
+    height: 340px;
+    margin-left: 7%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.services-sub{
+    height: 245px;
+    width: 260px;
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.services-sub h6{
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 45%;
+    font-size: 16px;
+    font-weight: 600;
+}
+.services-sub p{
+    font-family: "Open Sans", sans-serif;
+    position: absolute;
+    top: 60%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75;
+    visibility: visible;
+    color: #777;
+}
+
+
+/* items/products displayed */
+
+.items{
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+    height: 385px;
+    display: flex;
+    
+}
+.items-leftdiv{
+    width: 45%;
+    height: 100%;
+    margin-right: 15px;
+    background-image: url(..\..\images\banner\banner-style-1-img-1.jpg);
+    background-size: cover;
+    background-position: center;    
+    position: relative;
+}
+
+.content-left{
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    top: 30%;
+    left: 35%;
+    width: 60%;
+}
+
+.content-left h4{
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 11px;
+    letter-spacing: .12em;
+}
+.content-left h5{
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #777777;
+    font-weight: 200;
+    letter-spacing: .12em;
+
+}
+.content-left button{
+    padding: 12px 15px;
+    border: 1px solid #24262b;;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: .12em;
+}
+
+
+.items-rightdiv{
+    width: 55%;
+    height: 100%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;   
+
+}
+
+.items-rightdiv-top{
+    height: 50%;
+    display: flex;
+    gap: 30px;
+}
+.r-div1{
+    height: 100%;
+    width: 50%;
+    background-color: red;
+    background-image: url(..\..\images\banner\banner-style-2-img-1.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.r-div2{
+    height: 100%;
+    width: 50%;
+    background-color: yellow;
+    background-image: url(..\..\images\banner\banner-style-2-img-2.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.items-rightdiv-bottom{
+    height: 50%;
+    display: flex;
+    gap: 30px;
+}
+.r-div3{
+    height: 100%;
+    width: 50%;
+    background-color: blue;
+    background-image: url(..\..\images\banner\banner-style-2-img-3.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.r-div4{
+    height: 100%;
+    width: 50%;
+    background-color: green;
+    background-image: url(..\..\images\banner\banner-style-2-img-4.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.content{
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    top: 30%;
+    left: 60%;
+    width: 40%;
+
+}
+.title{
+    font-size: 21px;
+    margin-bottom: 18px;
+    font-weight: 100;
+    line-height: 1.2;
+    color: #24262b;
+    
+}
+.link-text{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+
+/* The new arrival  */
+
+
+.The-new-arrival{
+    margin-left: 9%;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.The-new-arrival h3{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.The-new-arrival p{
+    margin-top: 0;
+    margin-bottom: 16px;
+    display: block;
+    
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.56;
+    color: #777;
+}
+
+/* display image and price of new arrived items */
+
+
+.display-new-arrival-div{
+    height: 870px;
+    width: 100%;
+    display: flex;
+}
+.startdiv-arrival{
+    height: 100%;
+    width: 9%;
+}
+.enddiv-arrival{
+    height: 100%;
+    width: 9%;
+}
+.display-new-arrival{
+    height: 100%;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+}
+.display-new-arrival-top{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    height: 50%;
+}
+.display-new-arrival-bottom{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    height: 50%;
+}
+.newproducts{
+    height: 100%;
+    width: 25%;
+}
+
+.sale-tag{
+    font-family: "Open Sans", sans-serif;  
+    position: absolute;
+    border: 1px solid transparent;
+    background-color: #b19361;
+    height: 20px;
+    width: 45px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 8px;
+    color: white;
+}
+.new-detail-div{
+    padding-top: 25px;
+    font-family: "Open Sans", sans-serif;    
+}
+
+.new-detail-div a{
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 700;
+    color: #24262b;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;   
+    
+}
+.rating span{
+    font-size: 32px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+.rating p{
+    font-size: 14px;
+    font-weight: 100;
+    color: #4a4a4a;
+}
+.newimg-div1{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-2.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.newimg-div2{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-3.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.newimg-div3{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-5.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.newimg-div4{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.newimg-div5{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.newimg-div6{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.newimg-div7{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.newimg-div8{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* modern-furniture-collection */
+
+.modern-furniture-collection{    
+    font-family: "Open Sans", sans-serif;
+    width: 56%;
+    margin-left: 22%;
+    height: 514px;
+    margin-top: 80px;
+    background-image: url(../../images/banner/banner-style-3-img-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.modern-content{
+    width: 50%;
+    height: 70%;
+    position: relative;
+    top: 25%;
+    left: 45%;
+}
+.modern-furniture-collection h3{
+    font-size: 48px;
+    color:#24262b;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.modern-furniture-collection h5{
+    font-size: 16px;
+    color:#777777;
+    font-weight: 300;
+    margin-bottom: 50px;
+    letter-spacing: .09em;
+}
+
+.discover-button{
+    padding: 15px 33px;
+    border: 1px solid #24262b;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+/* best seller............................................................................... */
+
+.master-best-seller-div{
+    height: 700px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #f6f6f6;
+}
+.The-best-seller{
+    margin-left: 9%;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 100px;
+    margin-bottom: 60px;
+}
+.The-best-seller h3{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.The-best-seller p{
+    margin-top: 0;
+    margin-bottom: 16px;
+    display: block;    
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.56;
+    color: #777;
+}
+
+.best-seller-div{
+    height: 400px;
+    width: 100%;
+    display: flex;
+}
+.best-seller-products{
+    height: 400px;
+    width: 80%;
+    display: flex;
+    gap: 30px;
+}
+.best-seller-img{
+    height: 100%;
+    width: 23%;
+}
+.best-seller-prod-startdiv{
+    height: 100%;
+    width: 10%;
+}
+.best-seller-prod-enddiv{
+    height: 100%;
+    width: 10%;
+}
+
+.best-seller-div1{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.best-seller-div2{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.best-seller-div3{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.best-seller-div4{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*.sale-tag{
+    font-family: "Open Sans", sans-serif;  
+    position: absolute;
+    border: 1px solid transparent;
+    background-color: #b19361;
+    height: 20px;
+    width: 45px;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 8px;
+    color: white;
+}
+.new-detail-div{
+    padding-top: 25px;
+    font-family: "Open Sans", sans-serif;    
+}
+
+.new-detail-div a{
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 700;
+    color: #24262b;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;   
+    
+}
+.rating span{
+    font-size: 32px;
+    font-weight: 500;
+    color: #4a4a4a;
+}
+.rating p{
+    font-size: 14px;
+    font-weight: 100;
+    color: #4a4a4a;
+}*/
+
+
+/* product categories........................................................... */
+
+.product-categories{
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+.prod-cat-img-1{
+    height: 100%;
+    width: 25%;
+    background-image: url(../../images/banner/banner-style-4-img-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.prod-cat-img-2{
+    height: 100%;
+    width: 25%;
+    background-image: url(../../images/banner/banner-style-4-img-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.prod-cat-img-3{
+    height: 100%;
+    width: 25%;
+    background-image: url(../../images/banner/banner-style-4-img-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.prod-cat-img-4{
+    height: 100%;
+    width: 25%;
+    background-image: url(../../images/banner/banner-style-4-img-4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.prod-cat-content{
+    font-family: "Open Sans", sans-serif;
+    color: #24262b;  
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.prod-cat-content h4{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.prod-cat-content h6{
+    font-size: 14px;
+    color: #777777;
+    font-weight: 100;
+    letter-spacing: 0.12em;
+}
+
+
+
+/* the latest blogs ................................................................................ */
+
+
+.master-the-latest-blog{
+    height: 700px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #f6f6f6;
+}
+.the-latest-blog{
+    margin-left: 8%;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 100px;
+    margin-bottom: 40px;
+}
+.the-latest-blog h3{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.the-latest-blog p{
+    margin-top: 0;
+    margin-bottom: 16px;
+    display: block;    
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.56;
+    color: #777;
+}
+
+.latest-blog-div{
+    height: 400px;
+    width: 100%;
+    display: flex;
+}
+.latest-blog-posts{
+    height: 400px;
+    width: 84%;
+    display: flex;
+    gap: 30px;
+}
+.latest-blog-img{
+    height: 100%;
+    width: 33%;
+}
+
+.new-detail-div{
+    padding-top: 25px;
+    font-family: "Open Sans", sans-serif;    
+}
+
+.rating{
+    padding-top: 14px;   
+    display: block;
+    
+}
+.rating p{
+    font-size: 14px;
+    font-weight: 100;
+    color: #777777;
+    letter-spacing: 0.04rem;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+.rating h4{
+    font-size: 14px;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+.latest-blog-posts-startdiv{
+    height: 100%;
+    width: 8%;
+}
+.latest-blog-posts-enddiv{
+    height: 100%;
+    width: 7%;
+}
+
+.latest-blog-div1{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/blog/blog-grid-home-1-img-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.latest-blog-div2{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/blog/blog-grid-home-1-img-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.latest-blog-div3{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/blog/blog-grid-home-1-img-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* honotemplate.................................................................................... */
+
+.masterhonotemplate{
+    height: 400px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #f6f6f6;
+}
+.honotemplate-images{
+    height: 200px;
+    width: 86%;
+    display: flex;
+    position: relative;
+    top: 25%;
+    left: 9%;
+}
+.honotemplate{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #24262b;
+    background: #fff;
+    border-radius: 5px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    letter-spacing: 0.07rem;
+}
+.hono-images1{
+    background-image: url(../../images/instagram/instagram-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 16%;
+}
+.hono-images2{
+    background-image: url(../../images/instagram/instagram-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 16%;
+}
+.hono-images3{
+    background-image: url(../../images/instagram/instagram-3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 16%;
+}
+.hono-images4{
+    background-image: url(../../images/instagram/instagram-4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 16%;
+}
+.hono-images5{
+    background-image: url(../../images/instagram/instagram-5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 16%;
+}
+.hono-images6{
+    background-image: url(../../images/instagram/instagram-6.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 16%;
+}
