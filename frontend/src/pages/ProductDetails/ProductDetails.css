@@ -46,18 +46,317 @@ body, html{
 
 .masterdiv{
     height: 90vh;
-    width: 80%;
-    margin-left: 10%;
-    background-color: rgb(60, 187, 237);
+    width: 82%;
+    margin-left: 9%;
     display: flex;
+    gap: 30px;
+    margin-top: 100px;
 }
 .leftdiv{
     height: 100%;
     width: 40%;
-    background-color: rgb(192, 223, 235);
 }
 .rightdiv{
     height: 100%;
     width: 60%;
-    background-color: rgb(168, 183, 189);
+}
+.leftdiv-top{
+    width: 100%;
+    height: 83%;
+    background-image: url(../../images/product/default/home-1/default-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.leftdiv-bottom{
+    width: 100%;
+    height: 17%;
+    padding-top: 25px;
+    display: flex;
+}
+.leftdiv-bottom-start{
+    height: 100%;
+    width: 6%;
+    color: #777777;
+    padding-top: 8%;
+    letter-spacing: 0.12rem;
+}
+.leftdiv-bottom-mid{
+    height: 100%;
+    width: 88%;
+    display: flex;
+    gap: 25px;
+}
+.leftdiv-bottom-mid-images1{
+    background-image: url(../../images/product/default/home-1/default-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 20%;
+
+}
+.leftdiv-bottom-mid-images2{
+    background-image: url(../../images/product/default/home-1/default-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 20%;
+}
+.leftdiv-bottom-mid-images3{
+    background-image: url(../../images/product/default/home-1/default-3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 20%;
+}
+.leftdiv-bottom-mid-images4{
+    background-image: url(../../images/product/default/home-1/default-4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 20%;
+}
+.leftdiv-bottom-end{
+    height: 100%;
+    width: 6%;
+    color: #777777;
+    padding-top: 8%;
+    padding-left: 4px;
+    letter-spacing: 0.12rem;
+
+}
+
+
+.rightdiv-title{
+    font-size: 34px;
+    padding-bottom: 5px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #24262b;
+}
+.rightdiv-review{
+    font-size: 14px;
+    color: #777777;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+.rightdiv p{
+    font-size: 14px;
+    margin-bottom: 30px;
+    color: #777777;
+    line-height: 1.5;
+
+}
+.border-line{
+    height: 1px;
+    width: 100%;
+    background-color: #777777;
+    opacity: 0.2;
+}
+.product-details{
+    padding-top: 20px;
+
+}
+.product-details h4{
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #24262b;
+    font-weight: 100px;
+}
+.stock{
+    font-size: 14px;
+    color: #24262b;
+    margin-bottom: 15px;
+    font-weight: 700px;
+    line-height: 1.75;
+    position: relative;
+    color: #777;
+}
+.quantity{
+    height: 100px;
+    display: flex;
+    margin-top: 10px;
+}
+.quantity-text{
+    margin-top: 30px;
+    font-size: 14px;
+    color: #24262b;
+    font-weight: 500;
+}
+.quantity input{
+    width: 100px;
+    height: 50px;
+    padding-left: 12px;
+    font-size: 16px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+}
+
+.quantity button{
+    margin-left: 10px;
+    height: 50px;
+    width: 200px;
+    color: #FFFFFF;
+    background-color: #24262b;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.add-to-wishlist{
+    width: 50%;
+    display: flex;
+}
+.icons{
+    text-decoration: none;
+    margin-right: 35px;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 35px;
+}
+.categories{
+    margin-top: 45px;
+    display: flex;
+    font-size: 14px;
+    height: 20px;
+}
+.share-product{
+    margin-top: 15px;
+    display: flex;
+    font-size: 14px;
+    height: 20px;
+}
+.categories-options{
+    color: #b19361;
+}
+
+/* ................................................................................................ */
+
+.master-description-specification-reviews{
+    height: 400px;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 100px;
+}
+.description-specification-reviews{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    font-weight: 500;
+}
+.description-line{
+    height: 4px;
+    width: 100%;
+    background-color: #777;
+    margin-top: 10px;
+    
+}
+.description-specification-reviews ul{
+    list-style-type: none;
+    padding-top: 25px;
+}
+.description-specification-reviews li{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #777777;
+}
+.description-specification-reviews-content{
+    height: 250px;
+    width: 100%;
+    padding: 30px 20px;
+    color: #777777;
+    border: 1px solid #ededed;
+}
+.description-specification-reviews-content p{
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #777777;
+    font-weight: 400;
+    line-height: 1.70;
+    letter-spacing: 0.01rem;
+}
+
+
+/* .............................................................................................. */
+
+
+.related-product-seller-div{
+    height: 700px;
+    width: 100%;
+    margin-top: 100px;
+}
+.The-best-seller{
+    margin-left: 9%;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 100px;
+    margin-bottom: 60px;
+}
+.The-best-seller h3{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.The-best-seller p{
+    margin-top: 0;
+    margin-bottom: 16px;
+    display: block;    
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.56;
+    color: #777;
+}
+
+.best-seller-div{
+    height: 400px;
+    width: 100%;
+    display: flex;
+}
+.best-seller-products{
+    height: 400px;
+    width: 80%;
+    display: flex;
+    gap: 30px;
+}
+.best-seller-img{
+    height: 100%;
+    width: 23%;
+}
+.best-seller-prod-startdiv{
+    height: 100%;
+    width: 10%;
+}
+.best-seller-prod-enddiv{
+    height: 100%;
+    width: 10%;
+}
+
+.best-seller-div1{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.best-seller-div2{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.best-seller-div3{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.best-seller-div4{
+    width: 100%;
+    height: 70%;
+    background-image: url(../../images/product/default/home-1/default-6.jpg);
+    background-position: center;
+    background-size: cover;
 }

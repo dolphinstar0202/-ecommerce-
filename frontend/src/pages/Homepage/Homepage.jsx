@@ -278,9 +278,7 @@ const Homepage = () => {
 
     <div className="best-seller-div">
 
-      {/* <div className="best-seller-content">
-
-      </div> */}
+      
 
       <div className="best-seller-prod-startdiv">
 
