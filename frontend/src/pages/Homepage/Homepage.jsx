@@ -7,6 +7,7 @@ import servicepromo3 from "../../images/icons/service-promo-3.png"
 import servicepromo4 from "../../images/icons/service-promo-4.png"
 import Footer from '../../components/Footer/Footer.jsx'
 import ProductDetails from '../ProductDetails/ProductDetails.jsx'
+import Cartpage from '../Cartpage/Cartpage.jsx'
 
 const Homepage = () => {
   return (
@@ -501,6 +502,8 @@ const Homepage = () => {
 
 <Footer/>
 <ProductDetails/>
+
+<Cartpage/>
     </>
   )
 }

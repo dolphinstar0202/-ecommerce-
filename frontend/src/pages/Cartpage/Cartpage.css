@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+.master-product-detail-div{
+    height: 45vh;
+    width: 100%;
+    background-color:#fef5ef;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.product-detail-div{
+    height: 50%;
+    width: 50%;
+}
+.product-detail-title-div h3{
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    margin-bottom: 12px;
+    font-weight: 100;
+    line-height: 1.2;
+    color: #24262b;
+    
+}
+.product-detail-text-div{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #000000;
+}
+.product-detail-text-div span{
+    color: #777777;
+}
+
+/* ................................................................................................... */
+
+
+.master-table-div{
+    height: 400px;
+    width: 84%;
+    margin-left: 8%;
+    margin-top: 100px;
+}
+table{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ededed;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-top: 0px;
+
+}
+th{
+    display: flexs;
+    border-right: 1px solid #ededed;
+    height: 50px;
+    
+}
+tr{
+    color: #24262b;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    text-align: center;
+    height: 115px;
+}
+td{
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+.update-cart{
+    height: 60px;
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    justify-content: end;
+    border: 1px solid #ededed;
+    border-top: 0px;
+    
+}
+.update-cart button {
+    font-size: 14px;
+    background-color: #b19361;
+    padding: 6px 12px;
+    color: #ffffff;
+    border: 1px solid #b19361;
+    border-radius: 4px;
+}
+
+/* ................................................................................ */
+.coupon-total{
+    height: 420px;
+    width: 84%;
+    margin-left: 8%;
+    margin-top: 120px;
+    margin-bottom: -30px;
+    display: flex;    
+    gap: 30px;
+}
+.left-ct{
+    height: 170px;
+    width: 50%;
+    border: 1px solid #efefef;
+}
+.left-ct h3{
+    height: 46px;
+    padding: 15px 15px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #333333;
+}
+.coupon-enter{
+    padding: 10px 20px 30px;
+}
+.coupon-enter p{
+    font-size: 13px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    color: #777777;
+}
+.coupon-enter input{
+    border: 1px solid #ededed;
+    height: 42px;
+    margin: 0 20px 10px 0;
+    padding: 0 20px;
+    font-size: 12px;
+    color: #333;
+    width: 175px;
+    border-radius: 2px;
+}
+.coupon-enter button{
+    background: #b19361;
+    height: 36px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid #b19361;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+.right-ct{
+    height: 300px;
+    width: 50%;
+    border: 1px solid #efefef;
+}
+.right-ct h3{
+    height: 46px;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #333333;
+}
+.coupon-inner{
+    padding: 10px 20px 25px;
+    color: #777777;
+    font-size: 14px;
+}
+.cart-subtotal{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-subtotal p{
+    font-size: 14px;
+    margin: 0 0 20px;
+    color: #777777;
+}
+.coupon-inner a{
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ededed;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    color: #777777;
+}
+.checkout-button{    
+    display: flex;
+    justify-content: right;
+
+}
+.checkout-button a{
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #b19361;
+    margin: 0 0 20px;
+    padding: 8px 12px 10px;
+}
