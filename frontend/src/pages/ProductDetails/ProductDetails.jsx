@@ -1,6 +1,11 @@
 import "./ProductDetails.css"
 import Navbar from "../../components/Navbar/Navbar.jsx"
 import Footer from "../../components/Footer/Footer.jsx"
+import { Link } from "react-router-dom"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faStar, faAngleRight, faAngleLeft, faHeart, faArrowsRotate } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF,faInstagram,faTwitter,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+
 
 const ProductDetails = () => {
   return (
@@ -12,7 +17,8 @@ const ProductDetails = () => {
             <h3>PRODUCT DETAILS - DEFAULT</h3>
         </div>
         <div className="product-detail-text-div">
-            <p>Home - Shop - <span>  Product Details Default</span></p>
+            <p>Home <FontAwesomeIcon icon={faAngleRight} /> Shop <FontAwesomeIcon icon={faAngleRight} />
+             <span>  Product Details Default</span></p>
         </div>
         </div>
     </div>
@@ -24,7 +30,7 @@ const ProductDetails = () => {
           </div>
           <div className="leftdiv-bottom">
             <div className="leftdiv-bottom-start">
-            •••
+            <FontAwesomeIcon icon={faAngleLeft} />
             </div>
             <div className="leftdiv-bottom-mid">
               <div className="leftdiv-bottom-mid-images1"></div>
@@ -33,13 +39,19 @@ const ProductDetails = () => {
               <div className="leftdiv-bottom-mid-images4"></div>
             </div>
             <div className="leftdiv-bottom-end">
-              •••
+            <FontAwesomeIcon icon={faAngleRight} />
             </div>
           </div>
         </div>
         <div className="rightdiv">
           <div className="rightdiv-title">CHAIR</div>
-          <div className="rightdiv-review">* * * * ‎ ‎ ‎ ‎ (customer review)</div> 
+          <div className="rightdiv-review"><span>
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='empty-icons' icon={faStar} />
+                </span>(customer review)</div> 
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est 
             tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo 
             gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.</p> 
@@ -51,17 +63,27 @@ const ProductDetails = () => {
           <div className="quantity">
             
             <input type="text" placeholder="1" />
-            <button>+ ADD TO CART</button>
+            
+            <Link to='/cartpage'>
+              <button>+ ADD TO CART</button>
+            </Link>
+
           </div>
           <div className="add-to-wishlist">
-            <a href="#" className="icons" >Add to wishlist</a>
-            <a href="#" className="icons" >Compare</a>
+            <a href="#" className="icons" ><FontAwesomeIcon icon={faHeart} /> Add to wishlist</a>
+            <a href="#" className="icons" ><FontAwesomeIcon icon={faArrowsRotate} /> Compare</a>
           </div>
         </div>
 
         <div className="border-line"></div>
         <div className="categories">CATEGORIES :   <p className="categories-options"> BAR STOOL, KITCHEN UTENSILS, TENNIS</p></div>
-        <div className="share-product">SHARE THIS PRODUCT :    <p className="categories-options">F X P G L</p></div>
+        <div className="share-product">SHARE THIS PRODUCT :    <span className="categories-options">
+                <FontAwesomeIcon className="follow-icon-prod-detail" icon={faFacebookF} />
+                <FontAwesomeIcon className="follow-icon-prod-detail" icon={faTwitter} />
+                <FontAwesomeIcon className="follow-icon-prod-detail" icon={faInstagram} />
+                <FontAwesomeIcon className="follow-icon-prod-detail" icon={faLinkedinIn} />
+          </span>
+          </div>
       
         </div>
         

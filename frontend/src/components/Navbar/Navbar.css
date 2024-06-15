@@ -16,25 +16,26 @@ body {
 }
 
 .companylogo{
+    font-family: fantasy;
     width: 15%;
     padding: 0;
     height: 50px;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 30px;
-    padding-left: 30px;
-    padding-top: 10px;
+    padding-left: 40px;
+    padding-top: 15px;
 }
 
 .navicons{
-    width: 55%;
+    width: 65%;
     height: 50px;
     padding-top: 20px;
     font-size: 18px;
     font-weight: 800;
-    padding-left: 20px;
+    padding-left: 80px;
 }
 .wishcartsearchicon{
-    width: 25%;
+    width: 15%;
     height: 50px;
     padding-top: 20px;
     font-size: 18px;
@@ -51,6 +52,12 @@ body {
     display: inline;
     margin-right: 7%; 
 }
+.link-text{
+    font-size: 14px;
+    color: #24262b;
+}
+
+
 .wishcartsearchicon ul {
     list-style-type: none;
     padding: 0;
@@ -58,5 +65,12 @@ body {
 }
 .wishcartsearchicon ul li {
     display: inline;
-    margin-right: 9%; 
+    margin-right: 15%; 
+}
+.icon-styling-faAngleDown{
+    font-size: 14px;
+}
+.icon-styling{
+    color: #24262b;
+    font-size: 18px;
 }

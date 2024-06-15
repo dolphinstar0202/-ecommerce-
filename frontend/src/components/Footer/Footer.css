@@ -65,19 +65,31 @@ html, body{
 }
 .follow{
     width: 20%;
+    margin-right: 30px;
 }
 .follow h5{
     font-size: 18px;
     margin-bottom: 27px;
 }
 .follow p{
-    letter-spacing: 0.5rem;
-    width: 120px;
+    width: 600px;
     border-radius: 9px;
-    background-color: rgb(45, 45, 247);
-    padding-left: 5px;
-    display: flex;
 }
+.follow-icon{
+    margin-right: 5px;
+    padding: 10px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #2F3239;
+    font-size: 14px; 
+    width: 22px; 
+    height: 22px; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .subscribe{
     width: 55%;
 }

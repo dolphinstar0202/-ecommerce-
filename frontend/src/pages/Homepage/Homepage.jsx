@@ -6,14 +6,26 @@ import servicepromo2 from "../../images/icons/service-promo-2.png"
 import servicepromo3 from "../../images/icons/service-promo-3.png"
 import servicepromo4 from "../../images/icons/service-promo-4.png"
 import Footer from '../../components/Footer/Footer.jsx'
-import ProductDetails from '../ProductDetails/ProductDetails.jsx'
-import Cartpage from '../Cartpage/Cartpage.jsx'
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight,faStar } from '@fortawesome/free-solid-svg-icons'
+
+//created this function 'cause everytime when navigated through <Link> tag, the loaded page was loded with its middle
+//part and some times bottom part.
+const scrollToTop = () => {
+  window.scrollTo(0, 0)
+}
 
 const Homepage = () => {
   return (
     <>
     <div className="landing" >
+
+
       <Navbar />
+
+
+
       <div className="homepage" >
         <div className="textcenter">
           <h4>NEW COLLECTION</h4>
@@ -58,7 +70,7 @@ const Homepage = () => {
       <div className="content-left">
             <h4>Mini rechargeable Table Lamp - E216</h4>
             <h5>WE DESIGN YOUR HOME</h5>
-            <button>DISCOVER NOW</button>
+            <button>DISCOVER NOW <FontAwesomeIcon icon={faArrowRight} /></button>
           </div>  
       </div>
       <div className="items-rightdiv">
@@ -67,13 +79,13 @@ const Homepage = () => {
         <div className="r-div1">
           <div className="content">
             <h4 className='title' >Kitchen utensils</h4>
-            <a href='#' className='link-text'>SHOP NOW</a>
+            <Link onClick={scrollToTop} to='/productdetails' className='link-text' >SHOP NOW</Link>
           </div>
         </div>
         <div className="r-div2">
         <div className="content">
             <h4 className='title' >Sofas and Armchairs</h4>
-            <a href='#' className='link-text'>SHOP NOW</a>
+            <Link onClick={scrollToTop}  to='/productdetails' className='link-text'>SHOP NOW</Link>
           </div>          
         </div>
         </div>
@@ -82,13 +94,13 @@ const Homepage = () => {
         <div className="r-div3">
         <div className="content">
             <h4 className='title' >Chair & Bar stools</h4>
-            <a href='#' className='link-text'>SHOP NOW</a>
+            <Link onClick={scrollToTop}  to='/productdetails' className='link-text'>SHOP NOW</Link>
           </div>          
         </div>
         <div className="r-div4">
         <div className="content">
             <h4 className='title' >Interior lighting</h4>
-            <a href='#' className='link-text'>SHOP NOW</a>
+            <Link onClick={scrollToTop}  to='/productdetails' className='link-text'>SHOP NOW</Link>
           </div>
         </div>
         </div>
@@ -120,12 +132,18 @@ const Homepage = () => {
             <a href="#"></a>            
           </div>
           <div className="new-detail-div">
-            <a href="#">
+            <Link onClick={scrollToTop}  to='/productdetails'>
               <h6>ALIQUAM LOBORTIS</h6>
-            </a>
+            </Link>
               <div className="rating">
-                <span>*****</span>
-                <p>$85.00</p>
+                <span>
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='empty-icons' icon={faStar} />
+                </span>
+                <p className='price-tag' >$85.00</p>
                 </div>         
           </div>
         </div>
@@ -136,12 +154,18 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-            <a href="#">
+          <Link onClick={scrollToTop}  to='/productdetails'>
               <h6>CONDIMENTUM PERFUME</h6>
-            </a>
+              </Link>
               <div className="rating">
-                <span>*****</span>
-                <p>$60.00</p>
+              <span>
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='empty-icons' icon={faStar} />
+                </span>
+                <p className='price-tag' >$60.00</p>
                 </div>
           </div>
         </div>
@@ -152,12 +176,18 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-            <a href="#">
+          <Link onClick={scrollToTop}  to='/productdetails'>
               <h6>ELECTRIC KETTLE</h6>
-            </a>
+              </Link>
               <div className="rating">
-                <span>*****</span>
-                <p>$100.00</p>
+              <span>
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='empty-icons' icon={faStar} />
+                </span>
+                <p className='price-tag' >$100.00</p>
                 </div>
           </div>
         </div>
@@ -168,12 +198,18 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-            <a href="#">
+          <Link onClick={scrollToTop}  to='/productdetails'>
               <h6>WINDED CHAIR</h6>
-            </a>
+              </Link>
               <div className="rating">
-                <span>*****</span>
-                <p>$73.00</p>
+              <span>
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='empty-icons' icon={faStar} />
+                </span>
+                <p className='price-tag' >$73.00</p>
                 </div>
           </div>
         </div>
@@ -187,12 +223,18 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-            <a href="#">
+          <Link onClick={scrollToTop}  to='/productdetails'>
               <h6>ELECTRIC KETTLE</h6>
-            </a>
+              </Link>
               <div className="rating">
-                <span>*****</span>
-                <p>$73.00</p>
+              <span>
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='empty-icons' icon={faStar} />
+                </span>
+                <p className='price-tag' >$73.00</p>
                 </div>
           </div>
         </div>
@@ -203,12 +245,18 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-            <a href="#">
+          <Link onClick={scrollToTop}  to='/productdetails'>
               <h6>WINDED CHAIR</h6>
-            </a>
+              </Link>
               <div className="rating">
-                <span>*****</span>
-                <p>$73.00</p>
+              <span>
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='empty-icons' icon={faStar} />
+                </span>
+                <p className='price-tag' >$73.00</p>
                 </div>
           </div>
         </div>
@@ -219,12 +267,18 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-            <a href="#">
+          <Link onClick={scrollToTop}  to='/productdetails'>
               <h6>CONDIMENTUM PERFUME</h6>
-            </a>
+              </Link>
               <div className="rating">
-                <span>*****</span>
-                <p>$73.00</p>
+              <span>
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='empty-icons' icon={faStar} />
+                </span>
+                <p className='price-tag' >$73.00</p>
                 </div>
           </div>
         </div>
@@ -235,12 +289,18 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-            <a href="#">
+          <Link onClick={scrollToTop}  to='/productdetails'>
               <h6>ELECTRIC KETTLE</h6>
-            </a>
+            </Link>
               <div className="rating">
-                <span>*****</span>
-                <p>$73.00</p>
+              <span>
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='empty-icons' icon={faStar} />
+              </span>
+                <p className='price-tag' >$73.00</p>
                 </div>
           </div>
         </div>
@@ -259,7 +319,7 @@ const Homepage = () => {
       <div className="modern-content">
         <h3>Modern Furniture Basic Collection</h3>
         <h5>WE DESIGN YOUR HOME MORE BEAUTIFUL</h5>
-        <span className='discover-button'>DISCOVER NOW</span>
+        <span className='discover-button'>DISCOVER NOW <FontAwesomeIcon icon={faArrowRight} /></span>
       </div>
     </div>
 
@@ -293,12 +353,18 @@ const Homepage = () => {
             <a href="#"></a>            
           </div>
           <div className="new-detail-div">
-            <a href="#">
+          <Link onClick={scrollToTop}  to='/productdetails'>
               <h6>ALIQUAM LOBORTIS</h6>
-            </a>
+              </Link>
               <div className="rating">
-                <span>*****</span>
-                <p>$85.00</p>
+              <span>
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='empty-icons' icon={faStar} />
+              </span>
+                <p className='price-tag' >$85.00</p>
                 </div>         
           </div>
         </div>
@@ -310,12 +376,18 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-            <a href="#">
+          <Link onClick={scrollToTop}  to='/productdetails'>
               <h6>CONDIMENTUM PERFUME</h6>
-            </a>
+              </Link>
               <div className="rating">
-                <span>*****</span>
-                <p>$60.00</p>
+              <span>
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='empty-icons' icon={faStar} />
+              </span>
+                <p className='price-tag' >$60.00</p>
                 </div>
           </div>
         </div>
@@ -327,12 +399,18 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-            <a href="#">
+          <Link onClick={scrollToTop}  to='/productdetails'>
               <h6>ELECTRIC KETTLE</h6>
-            </a>
+              </Link>
               <div className="rating">
-                <span>*****</span>
-                <p>$100.00</p>
+              <span>
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='empty-icons' icon={faStar} />
+              </span>
+                <p className='price-tag' >$100.00</p>
                 </div>
           </div>
         </div>
@@ -344,12 +422,18 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-            <a href="#">
+          <Link onClick={scrollToTop}  to='/productdetails'>
               <h6>WINDED CHAIR</h6>
-            </a>
+            </Link>
               <div className="rating">
-                <span>*****</span>
-                <p>$73.00</p>
+              <span>
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='filled-icon' icon={faStar} />
+                  <FontAwesomeIcon className='empty-icons' icon={faStar} />
+              </span>
+                <p className='price-tag' >$73.00</p>
                 </div>
           </div>
         </div>
@@ -371,27 +455,35 @@ const Homepage = () => {
     <div className="product-categories">
       <div className="prod-cat-img-1">
         <div className="prod-cat-content">
+        <Link onClick={scrollToTop}  to='/productdetails' className='link-text' >
           <h4>BAR STOOL</h4>
           <h6>20 products</h6>
+          </Link>
         </div>
 
       </div>
       <div className="prod-cat-img-2">
       <div className="prod-cat-content">
+      <Link onClick={scrollToTop}  to='/productdetails' className='link-text' >
           <h4>ARMCHAIRS</h4>
           <h6>20 products</h6>
+          </Link>
         </div>
       </div>
       <div className="prod-cat-img-3">
       <div className="prod-cat-content">
+      <Link onClick={scrollToTop}  to='/productdetails' className='link-text' >
           <h4>LIGHTING</h4>
           <h6>20 products</h6>
+          </Link>
         </div>
       </div>
       <div className="prod-cat-img-4">
       <div className="prod-cat-content">
+      <Link onClick={scrollToTop}  to='/productdetails' className='link-text' >
           <h4>EASY CHAIRS</h4>
           <h6>20 products</h6>
+          </Link>
         </div>
       </div>
     </div>
@@ -429,10 +521,10 @@ const Homepage = () => {
           <h6>Blog Post One</h6>
         </a>
           <div className="rating">
-            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex.
+            <p className='blog-para' >Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex.
               Aenean posuere libero eu augue condimentum rhoncus. Praesent</p>
               <br></br>
-              <h4>READ MORE - </h4>
+              <h4>READ MORE <FontAwesomeIcon icon={faArrowRight} /> </h4>
             </div>         
       </div>
     </div>
@@ -448,10 +540,10 @@ const Homepage = () => {
           <h6>Blog Post Two</h6>
         </a>
         <div className="rating">
-            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex.
+            <p className='blog-para' >Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex.
               Aenean posuere libero eu augue condimentum rhoncus. Praesent</p>
               <br></br>
-              <h4>READ MORE - </h4>
+              <h4>READ MORE <FontAwesomeIcon icon={faArrowRight} /> </h4>
             </div> 
       </div>
     </div>
@@ -467,9 +559,9 @@ const Homepage = () => {
           <h6>Blog Post Three</h6>
         </a>
         <div className="rating">
-            <p>Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex.Aenean posuere libero eu augue condimentum rhoncus. Praesent</p>
+            <p className='blog-para' >Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex.Aenean posuere libero eu augue condimentum rhoncus. Praesent</p>
               <br></br>
-              <h4>READ MORE - </h4>
+              <h4>READ MORE <FontAwesomeIcon icon={faArrowRight} /></h4>
             </div> 
       </div>
     </div>
@@ -501,9 +593,9 @@ const Homepage = () => {
 {/* importing footer section............................................................. */}
 
 <Footer/>
-<ProductDetails/>
+{/* <ProductDetails/>
 
-<Cartpage/>
+<Cartpage/> */}
     </>
   )
 }

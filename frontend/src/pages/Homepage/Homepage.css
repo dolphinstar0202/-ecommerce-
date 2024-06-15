@@ -19,7 +19,7 @@ html, body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 .textcenter{
     position: absolute;
@@ -320,15 +320,24 @@ html, body {
     
 }
 .rating span{
-    font-size: 32px;
+    font-size: 10px;
     font-weight: 500;
-    color: #4a4a4a;
+    color: rgb(115, 115, 115);
 }
-.rating p{
+.filled-icon{
+    margin-right: 5px;
+}
+.empty-icons{
+    opacity: 0.5;
+}
+.price-tag{
+    margin-left: 100px;
+    display: inline;
     font-size: 14px;
     font-weight: 100;
-    color: #4a4a4a;
+    color: #777777;
 }
+
 .newimg-div1{
     width: 100%;
     height: 70%;
@@ -513,46 +522,6 @@ html, body {
     background-size: cover;
 }
 
-/*.sale-tag{
-    font-family: "Open Sans", sans-serif;  
-    position: absolute;
-    border: 1px solid transparent;
-    background-color: #b19361;
-    height: 20px;
-    width: 45px;
-    margin-left: 20px;
-    margin-top: 20px;
-    padding-left: 8px;
-    color: white;
-}
-.new-detail-div{
-    padding-top: 25px;
-    font-family: "Open Sans", sans-serif;    
-}
-
-.new-detail-div a{
-    text-decoration: none;
-    font-size: 26px;
-    font-weight: 700;
-    color: #24262b;
-}
-.rating{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 14px;   
-    
-}
-.rating span{
-    font-size: 32px;
-    font-weight: 500;
-    color: #4a4a4a;
-}
-.rating p{
-    font-size: 14px;
-    font-weight: 100;
-    color: #4a4a4a;
-}*/
-
 
 /* product categories........................................................... */
 
@@ -594,6 +563,9 @@ html, body {
     color: #24262b;  
     margin-top: 40px;
     margin-left: 20px;
+}
+.link-text{
+    text-decoration: none;
 }
 .prod-cat-content h4{
     font-size: 24px;
@@ -665,7 +637,7 @@ html, body {
     display: block;
     
 }
-.rating p{
+.blog-para{
     font-size: 14px;
     font-weight: 100;
     color: #777777;

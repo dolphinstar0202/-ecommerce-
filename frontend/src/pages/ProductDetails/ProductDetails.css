@@ -142,11 +142,34 @@ body, html{
     margin-bottom: 20px;
 }
 .rightdiv p{
+    margin-top: -2px;
     font-size: 14px;
     margin-bottom: 30px;
     color: #777777;
     line-height: 1.5;
-
+}
+.rightdiv-review span{
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(115, 115, 115);
+}
+.filled-icon{
+    margin-right: 5px;
+}
+.empty-icons{
+    opacity: 0.5;
+    margin-right: 20px;
+}
+.follow-icon-prod-detail{
+    margin-left: 8px;
+    padding-top: 2px;
+    color: #b19361;
+    font-size: 14px;
+    width: 15px;
+    height: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .border-line{
     height: 1px;
@@ -202,6 +225,8 @@ body, html{
     font-size: 16px;
     border-radius: 3px;
 }
+
+
 .add-to-wishlist{
     width: 50%;
     display: flex;
@@ -226,7 +251,9 @@ body, html{
     height: 20px;
 }
 .categories-options{
-    color: #b19361;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(115, 115, 115);
 }
 
 /* ................................................................................................ */

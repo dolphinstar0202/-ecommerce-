@@ -1,4 +1,7 @@
 import "./Footer.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF,faInstagram,faTwitter,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
   return (
@@ -60,7 +63,12 @@ const Footer = () => {
             <div className="follow-subscribe-div">
             <div className="follow">
                 <h5>FOLLOW US</h5>
-                <p>F X I L</p>
+                <p>
+                <FontAwesomeIcon className="follow-icon" icon={faFacebookF} />
+                <FontAwesomeIcon className="follow-icon" icon={faTwitter} />
+                <FontAwesomeIcon className="follow-icon" icon={faInstagram} />
+                <FontAwesomeIcon className="follow-icon" icon={faLinkedinIn} />
+                </p>
             </div>
             <div className="subscribe">
             <h5>DON'T MISS OUT ON THE LATEST</h5>
@@ -72,7 +80,7 @@ const Footer = () => {
         <div className="copyright-visa">
             <div className="copyright-visa-div">
                 <div className="copyright">
-                    <p>© 2021 THERANKME. MADE WITH  BY THERANKME</p>
+                    <p>© 2021 THERANKME. MADE WITH  <FontAwesomeIcon icon={faHeart} color="red"/>  BY THERANKME</p>
                 </div>
                 <div className="visa">
                     <p>Here logos of company will be present</p>

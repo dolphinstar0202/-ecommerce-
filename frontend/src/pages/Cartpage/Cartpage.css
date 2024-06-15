@@ -15,7 +15,6 @@ body, html{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .product-detail-div{
     height: 50%;
@@ -29,7 +28,6 @@ body, html{
     font-weight: 100;
     line-height: 1.2;
     color: #24262b;
-    
 }
 .product-detail-text-div{
     display: flex;
@@ -57,13 +55,11 @@ table{
     border-bottom: 0px;
     border-right: 0px;
     border-top: 0px;
-
 }
 th{
     display: flexs;
     border-right: 1px solid #ededed;
-    height: 50px;
-    
+    height: 50px;    
 }
 tr{
     color: #24262b;
@@ -84,8 +80,7 @@ td{
     display: flex;
     justify-content: end;
     border: 1px solid #ededed;
-    border-top: 0px;
-    
+    border-top: 0px;    
 }
 .update-cart button {
     font-size: 14px;
