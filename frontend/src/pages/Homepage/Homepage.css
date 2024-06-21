@@ -15,7 +15,7 @@ html, body {
     min-height: 100vh;  
 }
 .homepage{
-    background-image: url("..\..\images\hero-slider\home-1\hero-slider-1.jpg");
+    background-image: url("https://res.cloudinary.com/dhrugutmv/image/upload/v1718448519/ecommerce/images/hero-slider/home-1/hero-slider-1_vqr99h.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -108,7 +108,7 @@ html, body {
     width: 45%;
     height: 100%;
     margin-right: 15px;
-    background-image: url(..\..\images\banner\banner-style-1-img-1.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448498/ecommerce/images/banner/banner-style-1-img-1_i3a9tx.jpg');
     background-size: cover;
     background-position: center;    
     position: relative;
@@ -163,17 +163,14 @@ html, body {
 .r-div1{
     height: 100%;
     width: 50%;
-    background-color: red;
-    background-image: url(..\..\images\banner\banner-style-2-img-1.jpg);
+    /* background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448500/ecommerce/images/banner/banner-style-2-img-1_c31a7t.jpg'); */
     background-size: cover;
     background-position: center;
-    
 }
 .r-div2{
     height: 100%;
     width: 50%;
-    background-color: yellow;
-    background-image: url(..\..\images\banner\banner-style-2-img-2.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448500/ecommerce/images/banner/banner-style-2-img-2_chrq6g.jpg');
     background-size: cover;
     background-position: center;
     
@@ -186,8 +183,7 @@ html, body {
 .r-div3{
     height: 100%;
     width: 50%;
-    background-color: blue;
-    background-image: url(..\..\images\banner\banner-style-2-img-3.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448501/ecommerce/images/banner/banner-style-2-img-3_psifln.jpg');
     background-size: cover;
     background-position: center;
     
@@ -195,8 +191,7 @@ html, body {
 .r-div4{
     height: 100%;
     width: 50%;
-    background-color: green;
-    background-image: url(..\..\images\banner\banner-style-2-img-4.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448501/ecommerce/images/banner/banner-style-2-img-4_mjrdre.jpg');
     background-size: cover;
     background-position: center;
    
@@ -341,7 +336,7 @@ html, body {
 .newimg-div1{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-2.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448550/ecommerce/images/product/default/home-1/default-2_xbx8ug.jpg');
     background-position: center;
     background-size: cover;
 
@@ -349,7 +344,7 @@ html, body {
 .newimg-div2{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-3.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448551/ecommerce/images/product/default/home-1/default-3_ozxnq5.jpg');
     background-position: center;
     background-size: cover;
 
@@ -357,7 +352,7 @@ html, body {
 .newimg-div3{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-5.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448552/ecommerce/images/product/default/home-1/default-5_tkuhet.jpg');
     background-position: center;
     background-size: cover;
 
@@ -365,35 +360,35 @@ html, body {
 .newimg-div4{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-7.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448553/ecommerce/images/product/default/home-1/default-7_c2a9rc.jpg');
     background-position: center;
     background-size: cover;
 }
 .newimg-div5{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-5.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448552/ecommerce/images/product/default/home-1/default-5_tkuhet.jpg');
     background-position: center;
     background-size: cover;
 }
 .newimg-div6{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-6.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448553/ecommerce/images/product/default/home-1/default-6_trxrxk.jpg');
     background-position: center;
     background-size: cover;
 }
 .newimg-div7{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-3.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448551/ecommerce/images/product/default/home-1/default-3_ozxnq5.jpg');
     background-position: center;
     background-size: cover;
 }
 .newimg-div8{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-4.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448552/ecommerce/images/product/default/home-1/default-4_uddr4u.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -407,7 +402,7 @@ html, body {
     margin-left: 22%;
     height: 514px;
     margin-top: 80px;
-    background-image: url(../../images/banner/banner-style-3-img-1.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448502/ecommerce/images/banner/banner-style-3-img-1_snhlfc.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -496,28 +491,28 @@ html, body {
 .best-seller-div1{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-9.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448554/ecommerce/images/product/default/home-1/default-9_jimsmt.jpg');
     background-position: center;
     background-size: cover;
 }
 .best-seller-div2{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-11.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448548/ecommerce/images/product/default/home-1/default-11_okansx.jpg');
     background-position: center;
     background-size: cover;
 }
 .best-seller-div3{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-5.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448552/ecommerce/images/product/default/home-1/default-5_tkuhet.jpg');
     background-position: center;
     background-size: cover;
 }
 .best-seller-div4{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-6.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448553/ecommerce/images/product/default/home-1/default-6_trxrxk.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -533,28 +528,28 @@ html, body {
 .prod-cat-img-1{
     height: 100%;
     width: 25%;
-    background-image: url(../../images/banner/banner-style-4-img-1.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448502/ecommerce/images/banner/banner-style-4-img-1_wpbip0.jpg');
     background-position: center;
     background-size: cover;
 }
 .prod-cat-img-2{
     height: 100%;
     width: 25%;
-    background-image: url(../../images/banner/banner-style-4-img-2.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448502/ecommerce/images/banner/banner-style-4-img-2_paffmp.jpg');
     background-position: center;
     background-size: cover;
 }
 .prod-cat-img-3{
     height: 100%;
     width: 25%;
-    background-image: url(../../images/banner/banner-style-4-img-3.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448503/ecommerce/images/banner/banner-style-4-img-3_wvvw0n.jpg');
     background-position: center;
     background-size: cover;
 }
 .prod-cat-img-4{
     height: 100%;
     width: 25%;
-    background-image: url(../../images/banner/banner-style-4-img-4.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448503/ecommerce/images/banner/banner-style-4-img-4_kptbu5.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -662,21 +657,21 @@ html, body {
 .latest-blog-div1{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/blog/blog-grid-home-1-img-1.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448511/ecommerce/images/blog/blog-grid-home-1-img-1_msnng2.jpg');
     background-position: center;
     background-size: cover;
 }
 .latest-blog-div2{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/blog/blog-grid-home-1-img-2.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448511/ecommerce/images/blog/blog-grid-home-1-img-2_jilnp7.jpg');
     background-position: center;
     background-size: cover;
 }
 .latest-blog-div3{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/blog/blog-grid-home-1-img-3.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448512/ecommerce/images/blog/blog-grid-home-1-img-3_wt71rn.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -715,42 +710,42 @@ html, body {
     letter-spacing: 0.07rem;
 }
 .hono-images1{
-    background-image: url(../../images/instagram/instagram-1.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448541/ecommerce/images/instagram/instagram-1_qc4bd4.jpg');
     background-position: center;
     background-size: cover;
     height: 100%;
     width: 16%;
 }
 .hono-images2{
-    background-image: url(../../images/instagram/instagram-2.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448541/ecommerce/images/instagram/instagram-2_yqeqyk.jpg');
     background-position: center;
     background-size: cover;
     height: 100%;
     width: 16%;
 }
 .hono-images3{
-    background-image: url(../../images/instagram/instagram-3.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448542/ecommerce/images/instagram/instagram-3_ce42di.jpg');
     background-position: center;
     background-size: cover;
     height: 100%;
     width: 16%;
 }
 .hono-images4{
-    background-image: url(../../images/instagram/instagram-4.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448544/ecommerce/images/instagram/instagram-4_tyxpsk.jpg');
     background-position: center;
     background-size: cover;
     height: 100%;
     width: 16%;
 }
 .hono-images5{
-    background-image: url(../../images/instagram/instagram-5.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448545/ecommerce/images/instagram/instagram-5_azxzna.jpg');
     background-position: center;
     background-size: cover;
     height: 100%;
     width: 16%;
 }
 .hono-images6{
-    background-image: url(../../images/instagram/instagram-6.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448545/ecommerce/images/instagram/instagram-6_pwlgs5.jpg');
     background-position: center;
     background-size: cover;
     height: 100%;

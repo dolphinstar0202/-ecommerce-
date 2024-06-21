@@ -1,14 +1,43 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../components/Navbar/Navbar'
 import './Cartpage.css'
-import default1 from '../../images/product/default/home-1/default-1.jpg'
-import default2 from '../../images/product/default/home-1/default-2.jpg'
-import default3 from '../../images/product/default/home-1/default-3.jpg'
 import Footer from '../../components/Footer/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight,faTrash } from '@fortawesome/free-solid-svg-icons'
+import { useContext } from 'react'
+
+import CartContext from '../../context/CartContext'
+
 
 const Cartpage = () => {
+    const {cart} = useContext(CartContext)
+
+    let [quantity, setQuantity] = useState(1);
+
+    
+    const handleQuantity = (e) => {
+        if(e.key === 'Enter'){
+            const value = parseInt(e.target.value,10);
+            if(!isNaN(value)){
+                setQuantity(value);
+            }
+        }
+    }
+
+    const calculateSubtotal = () => {
+        return cart.reduce((acc, item) => acc + parseInt(item.price), 0).toFixed(2)
+    }
+
+    
+
+    const handleDelete = () => {
+
+    }
+    
+
+    
+
+
   return (
     <>
 
@@ -37,30 +66,21 @@ const Cartpage = () => {
                 <th>Quantity</th>
                 <th>Total</th>
             </tr>
-            <tr>
-                <td style={{width:'12%'}} ><FontAwesomeIcon icon={faTrash} /></td>
-                <td style={{width:'18%'}} ><img src={default1} alt="" style={{height:"90px", width:'90px'}} /></td>
-                <td style={{width:'20%'}} >Chair</td>
-                <td style={{width:'20%'}} >$64</td>
-                <td style={{width:'18%'}} >Quantity <input style={{width:"60px", height:'40px', paddingLeft:'8px', fontSize:'16px'}} type="text" placeholder='1' /></td>
-                <td style={{width:'12%'}} >$128</td>
+            
+
+            {cart.map((item, index) => (
+            <tr key={index} >
+                <td style={{width:'12%'}} ><FontAwesomeIcon onClick={handleDelete} icon={faTrash} /></td>
+                <td style={{width:'18%'}} ><img src={item.imgURL} alt="Not able to fetch" style={{height:"90px", width:'90px'}} /></td>
+                <td style={{width:'20%'}} >{item.title}</td>
+                <td style={{width:'20%'}} >${item.price}</td>
+                <td style={{width:'18%'}} > <input onKeyDown={handleQuantity} style={{width:"60px", height:'40px', paddingLeft:'8px', fontSize:'16px'}} type="text" placeholder='1' /></td>
+                <td style={{width:'12%'}} >${item.price*quantity}
+                    
+                </td>
             </tr> 
-            <tr>
-                <td><FontAwesomeIcon icon={faTrash} /></td>
-                <td><img src={default2} alt="" style={{height:"90px", width:'90px'}} /></td>
-                <td>Chair</td>
-                <td>$90</td>
-                <td>Quantity <input style={{width:"60px", height:'40px', paddingLeft:'8px', fontSize:'16px'}} type="text" placeholder='1' /></td>
-                <td>$180</td>
-            </tr>
-            <tr>
-                <td><FontAwesomeIcon icon={faTrash} /></td>
-                <td><img src={default3} alt="" style={{height:"90px", width:'90px'}} /></td>
-                <td>Bottle</td>
-                <td>$80</td>
-                <td>Quantity <input style={{width:"60px", height:'40px', paddingLeft:'8px', fontSize:'16px'}} type="text" placeholder='1' /></td>
-                <td>$160</td>
-            </tr>
+        ))}
+        
             </tbody>
         </table>
 
@@ -88,16 +108,16 @@ const Cartpage = () => {
             <div className="coupon-inner">
                 <div className="cart-subtotal">
                     <p>Subtotal</p>
-                    <p>$215.00</p>
+                        <p>${calculateSubtotal()}</p>
                 </div>
                 <div className="cart-subtotal">
                     <p>Shipping</p>
-                    <p>Flat Rate: $255.00</p>
+                    <p>Flat Rate: $40.00</p>
                 </div>
                 <a href="#">Calculate Shipping</a>
                 <div className="cart-subtotal">
                     <p>Total</p>
-                    <p>$215.00</p>
+                    <p>${(parseFloat(calculateSubtotal()) + 40).toFixed(2)}</p>
                 </div>
                 <div className="checkout-button"><a href="">PROCEED TO CHECKOUT</a></div>
             </div>

@@ -1,13 +1,35 @@
 import "./ProductDetails.css"
 import Navbar from "../../components/Navbar/Navbar.jsx"
 import Footer from "../../components/Footer/Footer.jsx"
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar, faAngleRight, faAngleLeft, faHeart, faArrowsRotate } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF,faInstagram,faTwitter,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { items } from "../../components/Data.jsx"
+import { useState, useContext } from "react"
+import CartContext from "../../context/CartContext.js"
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0)
+}  
 
 const ProductDetails = () => {
+  const { cart, setCart } = useContext(CartContext);
+  const {id} = useParams()
+  const item = items.find(item => item.id === parseInt(id));
+
+  const addtocart = (id, price, title, description, imgURL) => {
+    const obj = {
+      id, price, title, description, imgURL
+    }
+    setCart([...cart, obj]);
+    alert("Your product is added to the cart")
+    console.log(cart);
+  }
+
+
+  
+
   return (
     <>
     <Navbar/>
@@ -25,8 +47,8 @@ const ProductDetails = () => {
 
     <div className="masterdiv">
         <div className="leftdiv">
-          <div className="leftdiv-top">
-
+        <div className="leftdiv-top">
+        <img src={item.imgURL} alt="" style={{ height: '100%', width: '100%', objectFit: 'cover', objectPosition: 'left'}}/>
           </div>
           <div className="leftdiv-bottom">
             <div className="leftdiv-bottom-start">
@@ -44,7 +66,7 @@ const ProductDetails = () => {
           </div>
         </div>
         <div className="rightdiv">
-          <div className="rightdiv-title">CHAIR</div>
+          <div className="rightdiv-title">{item.title}</div>
           <div className="rightdiv-review"><span>
                   <FontAwesomeIcon className='filled-icon' icon={faStar} />
                   <FontAwesomeIcon className='filled-icon' icon={faStar} />
@@ -52,6 +74,7 @@ const ProductDetails = () => {
                   <FontAwesomeIcon className='filled-icon' icon={faStar} />
                   <FontAwesomeIcon className='empty-icons' icon={faStar} />
                 </span>(customer review)</div> 
+                <div className="prod-price">${item.price}</div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est 
             tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo 
             gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.</p> 
@@ -64,8 +87,11 @@ const ProductDetails = () => {
             
             <input type="text" placeholder="1" />
             
-            <Link to='/cartpage'>
-              <button>+ ADD TO CART</button>
+            
+            <button onClick={() => addtocart(item.id, item.price, item.title, item.description, item.imgURL)} >+ ADD TO CART</button>
+            
+            <Link onClick={scrollToTop} to={`/cartpage/${id}`}> 
+            <button>GO TO CART</button>
             </Link>
 
           </div>

@@ -54,7 +54,7 @@ const Footer = () => {
                 
                 <ul>
                     <li>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.</li>
-                    <li>Address: Your address goes here. Email: demo@example.com</li>
+                    <li>Address: sector 192 Delhi Email:example@gmail.com</li>
                 </ul>
             </div>
         </div>

@@ -5,6 +5,7 @@ import {Route, RouterProvider, createBrowserRouter, createRoutesFromElements} fr
 import Homepage from './pages/Homepage/Homepage.jsx'
 import ProductDetails from './pages/ProductDetails/ProductDetails.jsx'
 import Cartpage from './pages/Cartpage/Cartpage.jsx'
+import CartContextProvider from "./context/CartContextProvider.jsx"
 
 
 
@@ -13,14 +14,18 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
     <Route path='' element={<Homepage/>} />
-    <Route path='cartpage' element={<Cartpage/>} />
-    <Route path='productdetails' element={<ProductDetails/>} />
+    <Route path='cartpage/:id' element={<Cartpage/>} />
+    <Route path='productdetails/:id' element={<ProductDetails />} />
     </Route>
   )
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  
   <React.StrictMode>
+    <CartContextProvider> 
     <RouterProvider router={router} />
-  </React.StrictMode>,
+    </CartContextProvider>
+  </React.StrictMode>
+  
 )

@@ -63,9 +63,9 @@ body, html{
 .leftdiv-top{
     width: 100%;
     height: 83%;
-    background-image: url(../../images/product/default/home-1/default-1.jpg);
-    background-position: center;
-    background-size: cover;
+    /* background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448501/ecommerce/images/banner/banner-style-2-img-4_mjrdre.jpg'); */
+    /* background-position: center; */
+    /* background-size: cover; */
 }
 .leftdiv-bottom{
     width: 100%;
@@ -87,7 +87,7 @@ body, html{
     gap: 25px;
 }
 .leftdiv-bottom-mid-images1{
-    background-image: url(../../images/product/default/home-1/default-1.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448547/ecommerce/images/product/default/home-1/default-1_j4b9ol.jpg');
     background-position: center;
     background-size: cover;
     height: 100%;
@@ -95,21 +95,21 @@ body, html{
 
 }
 .leftdiv-bottom-mid-images2{
-    background-image: url(../../images/product/default/home-1/default-2.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448550/ecommerce/images/product/default/home-1/default-2_xbx8ug.jpg');
     background-position: center;
     background-size: cover;
     height: 100%;
     width: 20%;
 }
 .leftdiv-bottom-mid-images3{
-    background-image: url(../../images/product/default/home-1/default-3.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448551/ecommerce/images/product/default/home-1/default-3_ozxnq5.jpg');
     background-position: center;
     background-size: cover;
     height: 100%;
     width: 20%;
 }
 .leftdiv-bottom-mid-images4{
-    background-image: url(../../images/product/default/home-1/default-4.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448552/ecommerce/images/product/default/home-1/default-4_uddr4u.jpg');
     background-position: center;
     background-size: cover;
     height: 100%;
@@ -152,6 +152,14 @@ body, html{
     font-size: 10px;
     font-weight: 500;
     color: rgb(115, 115, 115);
+}
+.prod-price{
+    font-size: 28px;
+    color: #24262b;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75;
 }
 .filled-icon{
     margin-right: 5px;
@@ -362,28 +370,28 @@ body, html{
 .best-seller-div1{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-9.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448554/ecommerce/images/product/default/home-1/default-9_jimsmt.jpg');
     background-position: center;
     background-size: cover;
 }
 .best-seller-div2{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-11.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448548/ecommerce/images/product/default/home-1/default-11_okansx.jpg');
     background-position: center;
     background-size: cover;
 }
 .best-seller-div3{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-5.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448552/ecommerce/images/product/default/home-1/default-5_tkuhet.jpg');
     background-position: center;
     background-size: cover;
 }
 .best-seller-div4{
     width: 100%;
     height: 70%;
-    background-image: url(../../images/product/default/home-1/default-6.jpg);
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448553/ecommerce/images/product/default/home-1/default-6_trxrxk.jpg');
     background-position: center;
     background-size: cover;
 }

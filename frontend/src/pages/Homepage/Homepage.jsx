@@ -1,14 +1,14 @@
 import React from 'react'
 import "./Homepage.css"
 import Navbar from '../../components/Navbar/Navbar.jsx'
-import servicepromo1 from "../../images/icons/service-promo-1.png"
-import servicepromo2 from "../../images/icons/service-promo-2.png"
-import servicepromo3 from "../../images/icons/service-promo-3.png"
-import servicepromo4 from "../../images/icons/service-promo-4.png"
 import Footer from '../../components/Footer/Footer.jsx'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight,faStar } from '@fortawesome/free-solid-svg-icons'
+import { items } from '../../components/Data.jsx'
+
+    const item = items.find(item => item.id === 7);
+    const imgURL = item.imgURL;
 
 //created this function 'cause everytime when navigated through <Link> tag, the loaded page was loded with its middle
 //part and some times bottom part.
@@ -42,22 +42,22 @@ const Homepage = () => {
     {/* services offered (free shipping, 30 days money back etc) */}
     <div className='services' >
       <div className='services-sub'>
-        <img src={servicepromo1} alt="Fetch error" style={{ width: '80px', height: '80px' }} />
+        <img src={'https://res.cloudinary.com/dhrugutmv/image/upload/v1718448534/ecommerce/images/icons/service-promo-1_qqg5wa.png'} alt="Fetch error" style={{ width: '80px', height: '80px' }} />
         <h6>FREE SHIPPING</h6>
         <p>Get 10% cash back, free shipping, free returns, and more at 1000+ top retailers!</p>
       </div>
       <div className='services-sub'>
-      <img src={servicepromo2} alt="Fetch error" style={{ width: '70px', height: '70px' }} />
+      <img src={'https://res.cloudinary.com/dhrugutmv/image/upload/v1718448535/ecommerce/images/icons/service-promo-2_dguybd.png'} alt="Fetch error" style={{ width: '70px', height: '70px' }} />
       <h6>30 DAYS MONEY BACK</h6>
       <p>100% satisfaction guaranteed, or get your money back within 30 days!</p>
       </div>
       <div className='services-sub'>
-      <img src={servicepromo3} alt="Fetch error" style={{ width: '70px', height: '70px' }} />
+      <img src={'https://res.cloudinary.com/dhrugutmv/image/upload/v1718448535/ecommerce/images/icons/service-promo-3_haxseb.png'} alt="Fetch error" style={{ width: '70px', height: '70px' }} />
       <h6>SAFE PAYMENT</h6>
       <p>Pay with the world’s most popular and secure payment methods.</p>
       </div>
       <div className='services-sub'>
-      <img src={servicepromo4} alt="Fetch error" style={{ width: '70px', height: '70px' }} />
+      <img src={'https://res.cloudinary.com/dhrugutmv/image/upload/v1718448536/ecommerce/images/icons/service-promo-4_qz6cul.png'} alt="Fetch error" style={{ width: '70px', height: '70px' }} />
       <h6>LOYALTY CUSTOMER</h6>
       <p>Card for the other 30% of their purchases at a rate of 1% cash back.</p>
       </div>
@@ -76,16 +76,16 @@ const Homepage = () => {
       <div className="items-rightdiv">
 
         <div className="items-rightdiv-top">
-        <div className="r-div1">
-          <div className="content">
+        <div className="r-div1" style={{backgroundImage: `url(${imgURL})`}} >
+            <div className="content">
             <h4 className='title' >Kitchen utensils</h4>
-            <Link onClick={scrollToTop} to='/productdetails' className='link-text' >SHOP NOW</Link>
+            <Link onClick={scrollToTop} to='/productdetails/7' className='link-text' >SHOP NOW</Link>
           </div>
         </div>
         <div className="r-div2">
         <div className="content">
             <h4 className='title' >Sofas and Armchairs</h4>
-            <Link onClick={scrollToTop}  to='/productdetails' className='link-text'>SHOP NOW</Link>
+            <Link onClick={scrollToTop}  to='/productdetails/8' className='link-text'>SHOP NOW</Link>
           </div>          
         </div>
         </div>
@@ -94,13 +94,13 @@ const Homepage = () => {
         <div className="r-div3">
         <div className="content">
             <h4 className='title' >Chair & Bar stools</h4>
-            <Link onClick={scrollToTop}  to='/productdetails' className='link-text'>SHOP NOW</Link>
+            <Link onClick={scrollToTop}  to='/productdetails/9' className='link-text'>SHOP NOW</Link>
           </div>          
         </div>
         <div className="r-div4">
         <div className="content">
             <h4 className='title' >Interior lighting</h4>
-            <Link onClick={scrollToTop}  to='/productdetails' className='link-text'>SHOP NOW</Link>
+            <Link onClick={scrollToTop}  to='/productdetails/10' className='link-text'>SHOP NOW</Link>
           </div>
         </div>
         </div>
@@ -132,7 +132,7 @@ const Homepage = () => {
             <a href="#"></a>            
           </div>
           <div className="new-detail-div">
-            <Link onClick={scrollToTop}  to='/productdetails'>
+            <Link onClick={scrollToTop}  to='/productdetails/11'>
               <h6>ALIQUAM LOBORTIS</h6>
             </Link>
               <div className="rating">
@@ -154,7 +154,7 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-          <Link onClick={scrollToTop}  to='/productdetails'>
+          <Link onClick={scrollToTop}  to='/productdetails/12'>
               <h6>CONDIMENTUM PERFUME</h6>
               </Link>
               <div className="rating">
@@ -176,7 +176,7 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-          <Link onClick={scrollToTop}  to='/productdetails'>
+          <Link onClick={scrollToTop}  to='/productdetails/13'>
               <h6>ELECTRIC KETTLE</h6>
               </Link>
               <div className="rating">
@@ -198,7 +198,7 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-          <Link onClick={scrollToTop}  to='/productdetails'>
+          <Link onClick={scrollToTop}  to='/productdetails/14'>
               <h6>WINDED CHAIR</h6>
               </Link>
               <div className="rating">
@@ -223,7 +223,7 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-          <Link onClick={scrollToTop}  to='/productdetails'>
+          <Link onClick={scrollToTop}  to='/productdetails/15'>
               <h6>ELECTRIC KETTLE</h6>
               </Link>
               <div className="rating">
@@ -245,7 +245,7 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-          <Link onClick={scrollToTop}  to='/productdetails'>
+          <Link onClick={scrollToTop}  to='/productdetails/16'>
               <h6>WINDED CHAIR</h6>
               </Link>
               <div className="rating">
@@ -267,7 +267,7 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-          <Link onClick={scrollToTop}  to='/productdetails'>
+          <Link onClick={scrollToTop}  to='/productdetails/17'>
               <h6>CONDIMENTUM PERFUME</h6>
               </Link>
               <div className="rating">
@@ -289,7 +289,7 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-          <Link onClick={scrollToTop}  to='/productdetails'>
+          <Link onClick={scrollToTop}  to='/productdetails/18'>
               <h6>ELECTRIC KETTLE</h6>
             </Link>
               <div className="rating">
@@ -348,12 +348,12 @@ const Homepage = () => {
       <div className="best-seller-products">
 
         <div className="best-seller-img">
-          <div className="best-seller-div1">
+          <div className="best-seller-div1" >
           <span className='sale-tag'>sale</span>
             <a href="#"></a>            
           </div>
           <div className="new-detail-div">
-          <Link onClick={scrollToTop}  to='/productdetails'>
+          <Link onClick={scrollToTop}  to='/productdetails/20'>
               <h6>ALIQUAM LOBORTIS</h6>
               </Link>
               <div className="rating">
@@ -376,7 +376,7 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-          <Link onClick={scrollToTop}  to='/productdetails'>
+          <Link onClick={scrollToTop}  to='/productdetails/21'>
               <h6>CONDIMENTUM PERFUME</h6>
               </Link>
               <div className="rating">
@@ -399,7 +399,7 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-          <Link onClick={scrollToTop}  to='/productdetails'>
+          <Link onClick={scrollToTop}  to='/productdetails/22'>
               <h6>ELECTRIC KETTLE</h6>
               </Link>
               <div className="rating">
@@ -422,7 +422,7 @@ const Homepage = () => {
             
           </div>
           <div className="new-detail-div">
-          <Link onClick={scrollToTop}  to='/productdetails'>
+          <Link onClick={scrollToTop}  to='/productdetails/23'>
               <h6>WINDED CHAIR</h6>
             </Link>
               <div className="rating">
