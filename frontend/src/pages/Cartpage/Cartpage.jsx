@@ -74,7 +74,7 @@ const Cartpage = () => {
                 <td style={{width:'18%'}} ><img src={item.imgURL} alt="Not able to fetch" style={{height:"90px", width:'90px'}} /></td>
                 <td style={{width:'20%'}} >{item.title}</td>
                 <td style={{width:'20%'}} >${item.price}</td>
-                <td style={{width:'18%'}} > <input onKeyDown={handleQuantity} style={{width:"60px", height:'40px', paddingLeft:'8px', fontSize:'16px'}} type="text" placeholder='1' /></td>
+                <td style={{width:'18%'}} > <input type="number" placeholder='1' onKeyDown={handleQuantity} style={{width:"60px", height:'40px', paddingLeft:'8px', fontSize:'16px'}} /></td>
                 <td style={{width:'12%'}} >${item.price*quantity}
                     
                 </td>

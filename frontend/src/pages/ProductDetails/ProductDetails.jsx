@@ -90,7 +90,7 @@ const ProductDetails = () => {
             
             <button onClick={() => addtocart(item.id, item.price, item.title, item.description, item.imgURL)} >+ ADD TO CART</button>
             
-            <Link onClick={scrollToTop} to={`/cartpage/${id}`}> 
+            <Link onClick={scrollToTop} to='/cartpage'> 
             <button>GO TO CART</button>
             </Link>
 

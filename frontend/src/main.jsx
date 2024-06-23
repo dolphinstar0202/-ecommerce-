@@ -6,6 +6,7 @@ import Homepage from './pages/Homepage/Homepage.jsx'
 import ProductDetails from './pages/ProductDetails/ProductDetails.jsx'
 import Cartpage from './pages/Cartpage/Cartpage.jsx'
 import CartContextProvider from "./context/CartContextProvider.jsx"
+import ProductPage from './pages/ProductPage/ProductPage.jsx'
 
 
 
@@ -14,8 +15,9 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
     <Route path='' element={<Homepage/>} />
-    <Route path='cartpage/:id' element={<Cartpage/>} />
+    <Route path='cartpage/' element={<Cartpage/>} />
     <Route path='productdetails/:id' element={<ProductDetails />} />
+    <Route path='productpage/' element={<ProductPage />} />
     </Route>
   )
 )

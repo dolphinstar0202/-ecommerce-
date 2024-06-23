@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="navicons">
         <ul>
             <li><Link onClick={scrollToTop} to='/' className='link-text' >HOME <FontAwesomeIcon icon={faAngleDown} className='icon-styling-faAngleDown' size="2xs" transform="down-2" /></Link></li>
-            <li><Link onClick={scrollToTop} className='link-text' >SHOP <FontAwesomeIcon icon={faAngleDown} className='icon-styling-faAngleDown' size="2xs" transform="down-2" /></Link></li>
+            <li><Link onClick={scrollToTop} to='/productpage' className='link-text' >SHOP <FontAwesomeIcon icon={faAngleDown} className='icon-styling-faAngleDown' size="2xs" transform="down-2" /></Link></li>
             <li><Link onClick={scrollToTop} className='link-text' >BLOG <FontAwesomeIcon icon={faAngleDown} className='icon-styling-faAngleDown' size="2xs" transform="down-2" /></Link></li>
             <li><Link onClick={scrollToTop} className='link-text' >PAGES <FontAwesomeIcon icon={faAngleDown} className='icon-styling-faAngleDown' size="2xs" transform="down-2" /></Link></li>
             <li><Link onClick={scrollToTop} className='link-text' >ABOUT US</Link></li>
