@@ -47,7 +47,6 @@ html, body {
 /* ....................................................................................................... */
 
 .master-div{
-    height: 4000px;
     width: 90%;
     margin-left: 5%;
     display: flex;
@@ -62,7 +61,8 @@ html, body {
 .masternewprod{ 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 20px;
+    margin-bottom: 100px;
 }
 
 .newproducts{
@@ -106,7 +106,7 @@ html, body {
     font-size: 18px;
     font-weight: 100;
     color: #5d5d5d;
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 .img-div{
@@ -118,7 +118,6 @@ html, body {
 }
 
 .master-filter-div{
-    height: 3000px;
     width: 25%;
 }
 .master-sort-div{

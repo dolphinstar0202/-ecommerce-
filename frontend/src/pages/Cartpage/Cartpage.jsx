@@ -12,7 +12,7 @@ import CartContext from '../../context/CartContext'
 const Cartpage = () => {
     const {cart} = useContext(CartContext)
 
-    let [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity] = useState(1);
 
     
     const handleQuantity = (e) => {
@@ -53,7 +53,7 @@ const Cartpage = () => {
         </div>
         </div>
     </div>    
-    
+    {/* ............................................................................................. */}
 
     <div className="master-table-div">
         <table>
@@ -90,6 +90,8 @@ const Cartpage = () => {
         </div>
         
     </div>
+
+    {/* ........................................................................................................... */}
 
     <div className="coupon-total">
         <div className="left-ct">

@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Navbar.css"
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars,faMagnifyingGlass,faCartPlus,faHeart,faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import WishlistPanelContext from '../../context/WishlistPanleslider/WishlistPanelContext'
+import WishlistPanel from '../WishlistsPanel/WishlistPanel'
 
 //created this function 'cause everytime when navigated through <Link> tag, the loaded page was loded with its middle
 //part and some times bottom part.
@@ -11,6 +13,13 @@ const scrollToTop = () => {
 }
 
 const Navbar = () => {
+  
+  const {isOpen, setIsOpen} = useContext(WishlistPanelContext) 
+
+  const handleWishlistPanel = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <div className='Navbar' >
       <div className="companylogo">
@@ -28,13 +37,16 @@ const Navbar = () => {
       </div>
       <div className="wishcartsearchicon">
         <ul>
-            <li><Link onClick={scrollToTop} className='link-text' ><FontAwesomeIcon icon={faHeart} className='icon-styling' /></Link></li>
+            <li><Link onClick={handleWishlistPanel} className='link-text' ><FontAwesomeIcon icon={faHeart} className='icon-styling' /></Link></li>
             <li><Link onClick={scrollToTop} to='/cartpage' className='link-text' ><FontAwesomeIcon icon={faCartPlus} className='icon-styling' /></Link></li>
             <li><Link onClick={scrollToTop} className='link-text' ><FontAwesomeIcon icon={faMagnifyingGlass} className='icon-styling' /></Link></li>
             <li><Link onClick={scrollToTop} className='link-text' ><FontAwesomeIcon icon={faBars} className='icon-styling' /></Link></li>
         </ul>        
       </div>
-      
+      {isOpen && <div className="overlay">
+        <WishlistPanel />
+      </div>}
+
     </div>
   )
 }

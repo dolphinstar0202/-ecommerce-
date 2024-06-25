@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+}
+.master-cross-div{
+    margin-bottom: 30px;
+    height: 30px;
+}
+.cross-div{
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+}
+.wishlist-text{
+    font-size: 21px;
+    color: #24262b;
+    margin-bottom: 40px;
+}
+
+ul{
+    list-style: none;
+}
+ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.div-img-text{
+    display: flex;
+    align-items: center;
+}
+.price-text{
+    width: 60%;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #777777;
+    align-items: center;
+}
+.Link-text{
+    text-decoration: none;
+    display: block;
+    color: #777777;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+span{
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75;
+    color: #777;
+}
+.view-wishlist{
+    height: 35px;
+    width: 80%;
+    margin-left: 10%;
+    background-color: #B19361;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-top: 50px;
+}
+.view-wishlist-Link-text{
+    text-decoration: none;
+    color: #fff;
+}

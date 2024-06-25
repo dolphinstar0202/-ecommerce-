@@ -50,6 +50,7 @@ html, body {
     border-radius: 4px;
     font-weight: bold;
     background-color: #fef5ef ;
+    cursor: pointer;
 }
 
 
@@ -221,7 +222,7 @@ html, body {
 
 
 
-/* The new arrival  */
+/* The new arrival  .......................................................................................*/
 
 
 .The-new-arrival{
@@ -271,13 +272,13 @@ html, body {
 .display-new-arrival-top{
     width: 100%;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     height: 50%;
 }
 .display-new-arrival-bottom{
     width: 100%;
     display: flex;
-    gap: 30px;
+    gap: 20px;
     height: 50%;
 }
 .newproducts{
@@ -292,10 +293,12 @@ html, body {
     background-color: #b19361;
     height: 20px;
     width: 45px;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
     padding-left: 8px;
     color: white;
+    display: flex;
+    align-items: center;
 }
 .new-detail-div{
     padding-top: 25px;
@@ -326,7 +329,6 @@ html, body {
     opacity: 0.5;
 }
 .price-tag{
-    margin-left: 100px;
     display: inline;
     font-size: 14px;
     font-weight: 100;
@@ -433,6 +435,7 @@ html, body {
     border: 1px solid #24262b;
     border-radius: 6px;
     font-weight: 700;
+    text-decoration: none;    
 }
 
 /* best seller............................................................................... */

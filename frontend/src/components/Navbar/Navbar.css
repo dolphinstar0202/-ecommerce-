@@ -74,3 +74,15 @@ body {
     color: #24262b;
     font-size: 18px;
 }
+/* SlidingBox.css......................................................................... */
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    z-index: 1000; /* Ensure it's on top */
+  }
+/* ................................................................................................   */

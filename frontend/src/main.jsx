@@ -7,6 +7,9 @@ import ProductDetails from './pages/ProductDetails/ProductDetails.jsx'
 import Cartpage from './pages/Cartpage/Cartpage.jsx'
 import CartContextProvider from "./context/CartContextProvider.jsx"
 import ProductPage from './pages/ProductPage/ProductPage.jsx'
+import WishlistContextProvider from './context/WishlistContext/WishlistContextProvider.jsx'
+import WishlistPage from './pages/Wishlist/Wishlist.jsx'
+import WishlistPanelContextProvider from './context/WishlistPanleslider/WishlistPanelContextProvider.jsx'
 
 
 
@@ -18,6 +21,7 @@ const router = createBrowserRouter(
     <Route path='cartpage/' element={<Cartpage/>} />
     <Route path='productdetails/:id' element={<ProductDetails />} />
     <Route path='productpage/' element={<ProductPage />} />
+    <Route path='wishlistpage/' element={<WishlistPage/>} />
     </Route>
   )
 )
@@ -25,8 +29,12 @@ const router = createBrowserRouter(
 ReactDOM.createRoot(document.getElementById('root')).render(
   
   <React.StrictMode>
-    <CartContextProvider> 
+    <CartContextProvider>
+    <WishlistContextProvider>
+    <WishlistPanelContextProvider>
     <RouterProvider router={router} />
+    </WishlistPanelContextProvider>
+    </WishlistContextProvider> 
     </CartContextProvider>
   </React.StrictMode>
   

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Homepage.css"
 import Navbar from '../../components/Navbar/Navbar.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
@@ -17,13 +17,15 @@ const scrollToTop = () => {
 }
 
 const Homepage = () => {
+
+
   return (
     <>
     <div className="landing" >
 
 
       <Navbar />
-
+      
 
 
       <div className="homepage" >
@@ -32,7 +34,9 @@ const Homepage = () => {
           <h2>Best Of NeoCon
             <br></br>
             Gold Award</h2>
-          <button>SHOP NOW</button>
+            <Link onClick={scrollToTop} to='/ProductPage' >
+          <button >SHOP NOW</button>
+          </Link>
         </div>
       </div>
     </div>
@@ -70,7 +74,9 @@ const Homepage = () => {
       <div className="content-left">
             <h4>Mini rechargeable Table Lamp - E216</h4>
             <h5>WE DESIGN YOUR HOME</h5>
+            <Link onClick={scrollToTop} to='/ProductPage' >
             <button>DISCOVER NOW <FontAwesomeIcon icon={faArrowRight} /></button>
+            </Link>
           </div>  
       </div>
       <div className="items-rightdiv">
@@ -108,7 +114,7 @@ const Homepage = () => {
       </div>
     </div>
 
-{/* the new arrival ............................................................... */}
+{/* the new arrival .............................................................................. */}
 
 
 
@@ -319,7 +325,9 @@ const Homepage = () => {
       <div className="modern-content">
         <h3>Modern Furniture Basic Collection</h3>
         <h5>WE DESIGN YOUR HOME MORE BEAUTIFUL</h5>
+        <Link onClick={scrollToTop} to='/ProductPage'> 
         <span className='discover-button'>DISCOVER NOW <FontAwesomeIcon icon={faArrowRight} /></span>
+        </Link>
       </div>
     </div>
 

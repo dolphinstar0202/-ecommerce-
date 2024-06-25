@@ -8,6 +8,8 @@ import { faFacebookF,faInstagram,faTwitter,faLinkedinIn } from '@fortawesome/fre
 import { items } from "../../components/Data.jsx"
 import { useState, useContext } from "react"
 import CartContext from "../../context/CartContext.js"
+import WishlistContext from "../../context/WishlistContext/WishlistContext.js"
+import WishlistPage from "../Wishlist/Wishlist.jsx"
 
 const scrollToTop = () => {
   window.scrollTo(0, 0)
@@ -15,6 +17,7 @@ const scrollToTop = () => {
 
 const ProductDetails = () => {
   const { cart, setCart } = useContext(CartContext);
+  const { wishlist, setWishlist } = useContext(WishlistContext)
   const {id} = useParams()
   const item = items.find(item => item.id === parseInt(id));
 
@@ -24,7 +27,14 @@ const ProductDetails = () => {
     }
     setCart([...cart, obj]);
     alert("Your product is added to the cart")
-    console.log(cart);
+  }
+
+  const addtowishlist = (id, price, title, description, imgURL) => {
+    const obj = {
+      id, price, title, description, imgURL
+    }
+    setWishlist([...wishlist, obj]);
+    alert("Your  product is added to the wishtlist")
   }
 
 
@@ -96,8 +106,8 @@ const ProductDetails = () => {
 
           </div>
           <div className="add-to-wishlist">
-            <a href="#" className="icons" ><FontAwesomeIcon icon={faHeart} /> Add to wishlist</a>
-            <a href="#" className="icons" ><FontAwesomeIcon icon={faArrowsRotate} /> Compare</a>
+            <Link to='/wishlistpage' onClick={() => addtowishlist(item.id, item.price, item.title, item.description, item.imgURL)} className="icons" ><FontAwesomeIcon icon={faHeart} /> Add to wishlist</Link>
+            <Link href="#" className="icons" ><FontAwesomeIcon icon={faArrowsRotate} /> Compare</Link>
           </div>
         </div>
 
