@@ -27,41 +27,43 @@ body {
 }
 
 .navicons{
-    width: 65%;
+    width: 45%;
     height: 50px;
-    padding-top: 20px;
     font-size: 18px;
     font-weight: 800;
-    padding-left: 80px;
-}
-.wishcartsearchicon{
-    width: 15%;
-    height: 50px;
-    padding-top: 20px;
-    font-size: 18px;
-    font-weight: 800;
+    padding-left: 20px;
 }
 
 .navicons ul {
     list-style-type: none;
-    padding-left: 0;
-    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-right: 30px;
 }
 
-.navicons ul li {
-    display: inline;
-    margin-right: 7%; 
-}
 .link-text{
     font-size: 14px;
     color: #24262b;
 }
 
+.wishcartsearchicon{
+    width: 40%;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    display: flex;
+    align-items: center;
+}
 
 .wishcartsearchicon ul {
     list-style-type: none;
     padding: 0;
+    padding-left: 20px;
     margin: 0;
+    width: 30%;
 }
 .wishcartsearchicon ul li {
     display: inline;
@@ -86,3 +88,57 @@ body {
     z-index: 1000; /* Ensure it's on top */
   }
 /* ................................................................................................   */
+
+.search-bar{
+    width: 70%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    background-color: rgb(225, 225, 225);
+
+}
+.search-prod{
+    width: 90%;
+    height: 30px;
+    border-width: 0px;
+    padding-left: 9px;
+    font-size: 16px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: rgb(235, 235, 235);
+}
+.search-icon{
+    width: 10%;
+    height: 30px;
+    margin-left: -2px;
+    font-size: 15px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    
+}
+input:focus {
+    outline: none;
+}
+.suggestions-list{
+    width: 28%;
+    height: 50px;
+    position: absolute;
+    top: 42px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.suggestion-item{
+    height: 40px;
+    background-color: rgb(235, 235, 235);
+    padding-left: 10px;
+}
+.suggestion-item:hover{
+    cursor: pointer;
+    background-color: rgb(215, 215, 215);
+}
