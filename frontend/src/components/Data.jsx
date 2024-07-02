@@ -73,7 +73,7 @@ export const items = [
     },
     {
         id: 10,
-        title: "Interior lighting",
+        title: "Interior lighting bulbs",
         name: "banner-style-2-img-4_mjrdre.jpg",
         price: "80",
         imgURL: 'https://res.cloudinary.com/dhrugutmv/image/upload/v1718448501/ecommerce/images/banner/banner-style-2-img-4_mjrdre.jpg',
@@ -86,7 +86,7 @@ export const items = [
 
     {
         id: 11,
-        title: "ALIQUAM LOBORTIS",
+        title: "designer chair",
         name: "default-2_xbx8ug.jpg",
         price: "85.00",
         imgURL: 'https://res.cloudinary.com/dhrugutmv/image/upload/v1718448550/ecommerce/images/product/default/home-1/default-2_xbx8ug.jpg',
@@ -94,7 +94,7 @@ export const items = [
     },
     {
         id: 12,
-        title: "CONDIMENTUM PERFUME",
+        title: "PERFUME",
         name: "default-3_ozxnq5.jpg",
         price: "433.00",
         imgURL: 'https://res.cloudinary.com/dhrugutmv/image/upload/v1718448551/ecommerce/images/product/default/home-1/default-3_ozxnq5.jpg',
@@ -172,7 +172,7 @@ export const items = [
     },
     {
         id: 21,
-        title: "ARMCHAIRS",
+        title: "Clock",
         name: "default-11_okansx.jpg",
         price: "360.00",
         imgURL: 'https://res.cloudinary.com/dhrugutmv/image/upload/v1718448548/ecommerce/images/product/default/home-1/default-11_okansx.jpg',
@@ -180,7 +180,7 @@ export const items = [
     },
     {
         id: 22,
-        title: "LIGHTING",
+        title: "Bottle",
         name: "default-5_tkuhet.jpg",
         price: "200.00",
         imgURL: 'https://res.cloudinary.com/dhrugutmv/image/upload/v1718448552/ecommerce/images/product/default/home-1/default-5_tkuhet.jpg',
