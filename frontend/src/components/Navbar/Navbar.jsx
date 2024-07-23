@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <div className='Navbar' >
       <div className="companylogo">
-        DEVSTORE
+        E-COMMERCE
       </div>
       <div className="navicons">
         <ul>
