@@ -12,12 +12,6 @@ import debounce from 'lodash.debounce';
 import SuprSendInbox from '@suprsend/react-inbox'
 import 'react-toastify/dist/ReactToastify.css' 
 
-// add to your react component
-<SuprSendInbox
-  workspaceKey= "CYJHJFdKTID2k1izkB8E"
-  subscriberId= "<subscriber_id>"
-  distinctId= "<distinct_id>"
-/>
 
 
 const scrollToTop = () => {
