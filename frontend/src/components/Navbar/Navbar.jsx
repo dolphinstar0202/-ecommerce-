@@ -8,6 +8,17 @@ import WishlistPanel from '../WishlistsPanel/WishlistPanel'
 import { items } from '../Data'
 import debounce from 'lodash.debounce';
 
+//integrating supersend
+import SuprSendInbox from '@suprsend/react-inbox'
+import 'react-toastify/dist/ReactToastify.css' 
+
+// add to your react component
+<SuprSendInbox
+  workspaceKey= "CYJHJFdKTID2k1izkB8E"
+  subscriberId= "<subscriber_id>"
+  distinctId= "<distinct_id>"
+/>
+
 
 const scrollToTop = () => {
   window.scrollTo(0, 0)
@@ -62,10 +73,17 @@ const Navbar = () => {
           </div>
           )}
         </div>
-        <ul>
+        <ul  >
             <li><Link onClick={handleWishlistPanel} ><FontAwesomeIcon icon={faHeart} className='icon-styling' /></Link></li>
             <li><Link onClick={scrollToTop} to='/cartpage' ><FontAwesomeIcon icon={faCartPlus} className='icon-styling' /></Link></li>
             <li><Link onClick={scrollToTop} ><FontAwesomeIcon icon={faBars} className='icon-styling' /></Link></li>
+            <li>
+                <SuprSendInbox
+                workspaceKey= "CYJHJFdKTID2k1izkB8E"
+                subscriberId= "YHLD4rzhh15kJVbSza73ZVe_gsySvXBZLzx743YIj_U"
+                distinctId= "vedanshm2001@gmail.com"
+                />
+            </li>
         </ul>        
       </div>
       {isOpen && <div className="overlay">

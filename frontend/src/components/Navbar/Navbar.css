@@ -17,7 +17,7 @@ body {
 
 .companylogo{
     font-family: fantasy;
-    width: 15%;
+    width: 18%;
     padding: 0;
     height: 50px;
     font-weight: 500;
@@ -27,7 +27,7 @@ body {
 }
 
 .navicons{
-    width: 45%;
+    width: 42%;
     height: 50px;
     font-size: 18px;
     font-weight: 800;
@@ -61,9 +61,10 @@ body {
 .wishcartsearchicon ul {
     list-style-type: none;
     padding: 0;
+    padding-top: 10px;
     padding-left: 20px;
     margin: 0;
-    width: 30%;
+    width: 40%;
 }
 .wishcartsearchicon ul li {
     display: inline;
@@ -90,7 +91,7 @@ body {
 /* ................................................................................................   */
 
 .search-bar{
-    width: 70%;
+    width: 60%;
     height: 30px;
     display: flex;
     align-items: center;

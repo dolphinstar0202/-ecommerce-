@@ -30,6 +30,10 @@ const Homepage = () => {
 
       <div className="homepage" >
         <div className="textcenter">
+          
+    <h1 className="text-3xl font-bold underline text-yellow-400">
+      Hello world!
+    </h1>
           <h4>NEW COLLECTION</h4>
           <h2>Best Of NeoCon
             <br></br>
