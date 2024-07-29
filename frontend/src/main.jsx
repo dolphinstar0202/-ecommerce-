@@ -10,7 +10,7 @@ import ProductPage from './pages/ProductPage/ProductPage.jsx'
 import WishlistContextProvider from './context/WishlistContext/WishlistContextProvider.jsx'
 import WishlistPage from './pages/Wishlist/Wishlist.jsx'
 import WishlistPanelContextProvider from './context/WishlistPanleslider/WishlistPanelContextProvider.jsx'
-
+import "./index.css";
 
 
 
