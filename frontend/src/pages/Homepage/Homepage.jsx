@@ -21,50 +21,90 @@ const Homepage = () => {
 
   return (
     <>
-    <div className="landing" >
+    <div className="w-[100%] min-h-screen" >
       
 
 
       <Navbar />
-      
 
 
-      <div className="homepage" >
-        <div className="textcenter">
-          <h4>NEW COLLECTION</h4>
-          <h2>Best Of NeoCon
+      <div className="bg-[url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448519/ecommerce/images/hero-slider/home-1/hero-slider-1_vqr99h.jpg')] 
+                      bg-cover bg-center w-[100%] min-h-screen
+                      " >
+        <div className="absolute top-[67%] left-[10%] -translate-y-2/4">
+          <h4 className='mt-0 mb-[5px] font-sans font-normal leading-5 text-[#24262b]' >
+            NEW COLLECTION</h4>
+          <h2 className='text-6xl font-sans font-semibold' >
+            Best Of NeoCon
             <br></br>
             Gold Award</h2>
             <Link onClick={scrollToTop} to='/ProductPage' >
-          <button >SHOP NOW</button>
+          <button className='mt-[40px] w-[130px] h-[44px] pt-[10px] pr-[15px] pb-[10px] pl-[1wa5px] border-2 border-solid border-[#24262b] rounded font-bold bg-[#fef5ef] cursor-pointer' >
+            SHOP NOW</button>
           </Link>
         </div>
       </div>
-    </div>
-
+    </div> 
 
 
     {/* services offered (free shipping, 30 days money back etc) */}
-    <div className='services' >
-      <div className='services-sub'>
+
+    <div className='w-[90%] ml-[5%] mt-16 grid grid-cols-1 justify-items-center gap-x-6 gap-y-3
+                    sm:grid-cols-2
+                    sm:gap-
+                    lg:h-[340px]
+                    lg:grid-cols-4
+                    lg:gap-y-0
+                    
+                    ' >
+            
+      <div className='h-[245px] w-[240px] relative flex justify-center'>
         <img src={'https://res.cloudinary.com/dhrugutmv/image/upload/v1718448534/ecommerce/images/icons/service-promo-1_qqg5wa.png'} alt="Fetch error" style={{ width: '80px', height: '80px' }} />
-        <h6>FREE SHIPPING</h6>
-        <p>Get 10% cash back, free shipping, free returns, and more at 1000+ top retailers!</p>
+        <h6 className='font-sans absolute top-[45%] text-sm font-medium
+                       md:font-semibold
+                       lg:text-base
+                       ' >
+          FREE SHIPPING</h6>
+        <p className='w-[100%] font-sans absolute top-[60%] text-sm font-normal leading-7 visible text-[#777] 
+                      lg:w-[100%]
+        ' >
+          Get 10% cash back, free shipping, free returns, and more at 1000+ top retailers!</p>
       </div>
-      <div className='services-sub'>
+      <div className='h-[245px] w-[240px] relative flex justify-center'>
       <img src={'https://res.cloudinary.com/dhrugutmv/image/upload/v1718448535/ecommerce/images/icons/service-promo-2_dguybd.png'} alt="Fetch error" style={{ width: '70px', height: '70px' }} />
-      <h6>30 DAYS MONEY BACK</h6>
-      <p>100% satisfaction guaranteed, or get your money back within 30 days!</p>
+      <h6 className='font-sans absolute top-[45%] text-sm font-medium
+                       md:font-semibold
+                       lg:text-base
+                       ' >
+        30 DAYS MONEY BACK</h6>
+      <p className='w-[100%] font-sans absolute top-[60%] text-sm font-normal leading-7 visible text-[#777] 
+                      lg:w-[100%]
+        ' >
+        100% satisfaction guaranteed, or get your money back within 30 days!</p>
       </div>
-      <div className='services-sub'>
+      <div className='h-[245px] w-[240px] relative flex justify-center'>
       <img src={'https://res.cloudinary.com/dhrugutmv/image/upload/v1718448535/ecommerce/images/icons/service-promo-3_haxseb.png'} alt="Fetch error" style={{ width: '70px', height: '70px' }} />
-      <h6>SAFE PAYMENT</h6>
-      <p>Pay with the world’s most popular and secure payment methods.</p>
+      <h6 className='font-sans absolute top-[45%] text-sm font-medium
+                       md:font-semibold
+                       lg:text-base
+                       ' >
+        SAFE PAYMENT</h6>
+      <p className='w-[100%] font-sans absolute top-[60%] text-sm font-normal leading-7 visible text-[#777] 
+                      lg:w-[100%]
+        ' >
+        Pay with the world’s most popular and secure payment methods.</p>
       </div>
-      <div className='services-sub'>
+      <div className='h-[245px] w-[240px] relative flex justify-center'>
       <img src={'https://res.cloudinary.com/dhrugutmv/image/upload/v1718448536/ecommerce/images/icons/service-promo-4_qz6cul.png'} alt="Fetch error" style={{ width: '70px', height: '70px' }} />
-      <h6>LOYALTY CUSTOMER</h6>
-      <p>Card for the other 30% of their purchases at a rate of 1% cash back.</p>
+      <h6 className='font-sans absolute top-[45%] text-sm font-medium
+                       md:font-semibold
+                       lg:text-base
+                       ' >
+        LOYALTY CUSTOMER</h6>
+      <p className='w-[100%] font-sans absolute top-[60%] text-sm font-normal leading-7 visible text-[#777] 
+                      lg:w-[100%]
+        ' >
+        Card for the other 30% of their purchases at a rate of 1% cash back.</p>
       </div>
     </div>
 
@@ -113,7 +153,7 @@ const Homepage = () => {
         </div>
 
       </div>
-    </div>
+    </div> 
 
 {/* the new arrival .............................................................................. */}
 
@@ -123,7 +163,7 @@ const Homepage = () => {
     <div className='The-new-arrival' >
       <h3>THE NEW ARRIVALS</h3>
       <p>Preorder now to receive exclusive deals & gifts</p>      
-    </div>
+    </div> 
 
 
 
@@ -317,7 +357,7 @@ const Homepage = () => {
       </div>
       <div className="enddiv-arrival">
       </div>
-    </div>
+    </div> 
 
 
 {/* new part................................................................................... */}
@@ -330,7 +370,7 @@ const Homepage = () => {
         <span className='discover-button'>DISCOVER NOW <FontAwesomeIcon icon={faArrowRight} /></span>
         </Link>
       </div>
-    </div>
+    </div> 
 
 
 
@@ -456,7 +496,7 @@ const Homepage = () => {
     </div>
 
 
-    </div>
+    </div> 
 
 
     {/* product categories............................................... */}
@@ -495,7 +535,7 @@ const Homepage = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </div> 
 
 
     {/* the blog posts.................................................................... */}
@@ -581,7 +621,7 @@ const Homepage = () => {
     
   </div>
 </div>
-</div>
+</div> 
 
 
 {/* honotemplate............................................................................... */}
@@ -596,15 +636,14 @@ const Homepage = () => {
     <div className="hono-images5"></div>
     <div className="hono-images6"></div>
   </div>
-</div>
+</div> 
 
 
 {/* importing footer section............................................................. */}
 
 <Footer/>
-{/* <ProductDetails/>
 
-<Cartpage/> */}
+
     </>
   )
 }

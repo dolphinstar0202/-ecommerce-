@@ -10,7 +10,7 @@ html, body {
     padding: 0;
 }
 
-.landing{
+/* .landing{
     width: 100%;
     min-height: 100vh;  
 }
@@ -26,8 +26,8 @@ html, body {
     top: 67%;
     left: 10%;
     transform: translateY(-50%);
-}
-.textcenter h4{
+} */
+/* .textcenter h4{
     
     margin-top: 0;
     margin-bottom: 5px;
@@ -40,8 +40,8 @@ html, body {
     font-size: 58px;
     font-family: "Open Sans", sans-serif;
     font-weight: 550;
-}
-.textcenter button{
+} */
+/* .textcenter button{
     margin-top: 40px;
     width: 130px;
     height: 44px;
@@ -51,13 +51,13 @@ html, body {
     font-weight: bold;
     background-color: #fef5ef ;
     cursor: pointer;
-}
+} */
 
 
 
 /* code for services offered by company */
 
-.services{
+/* .services{
     width: 86%;
     display: flex;
     height: 340px;
@@ -65,8 +65,8 @@ html, body {
     align-items: center;
     justify-content: space-between;
 
-}
-.services-sub{
+} */
+/* .services-sub{
     height: 245px;
     width: 260px;
     position: relative;    
@@ -92,7 +92,7 @@ html, body {
     line-height: 1.75;
     visibility: visible;
     color: #777;
-}
+} */
 
 
 /* items/products displayed */

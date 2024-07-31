@@ -8,16 +8,17 @@ import WishlistPanel from '../WishlistsPanel/WishlistPanel'
 import { items } from '../Data'
 import debounce from 'lodash.debounce';
 
-//integrating supersend
 import SuprSendInbox from '@suprsend/react-inbox'
 import 'react-toastify/dist/ReactToastify.css' 
 
 // add to your react component
 <SuprSendInbox
-  workspaceKey= "CYJHJFdKTID2k1izkB8E"
-  subscriberId= "<subscriber_id>"
-  distinctId= "<distinct_id>"
+  workspaceKey= "KuM1eXvnukphS3JzHD02"
+  subscriberId= "OGDv9D-9BIKG20iYtoFRzQBZ5MKlkmA4sVnMWs6wyAo"
+  distinctId= "test123"
 />
+
+
 
 
 const scrollToTop = () => {
@@ -40,9 +41,9 @@ const Navbar = () => {
   return (
     <div 
       className='flex w-full bg-[#fef5ef] h-18 justify-between 
-                 lg: ' >      
+                  ' >      
        <div 
-         className="font-mono w-[18%] p-0 h-12.5 font-bold text-xl pl-8 pt-1.5 
+         className="font-mono w-[18%] p-0 h-12.5 font-bold text-xl pl-8 pt-3 
                     sm:text-2xl 
                     md:text-3xl">
          FURNISTORE
@@ -140,8 +141,10 @@ const Navbar = () => {
         
         
         <ul 
-          className='list-none p-0 pt-1 pl-5 mt-2 w-[60%] flex justify-end
-                     lg:w-[40%]' >
+          className='list-none p-0 pt-1 pl-2 mt-2 w-[60%] flex justify-end
+                     lg:w-[40%]
+                     lg:ml-5
+                     xl:ml-2' >
 
             <li 
               className='inline mr-5
@@ -152,7 +155,7 @@ const Navbar = () => {
 
             <li 
               className='inline mr-5
-                         xl:mr-[15%]' >
+                         xl:mr-[12%]' >
                 <Link onClick={handleWishlistPanel} >
                   <FontAwesomeIcon icon={faHeart} 
                   className='font-lg text-[#24262b]
@@ -163,7 +166,7 @@ const Navbar = () => {
 
             <li 
               className='inline mr-5
-                         xl:mr-[15%]' >
+                         xl:mr-[12%]' >
                 <Link onClick={scrollToTop} to='/cartpage' >
                   <FontAwesomeIcon icon={faCartPlus} 
                   className='font-lg text-[#24262b]
@@ -171,10 +174,18 @@ const Navbar = () => {
                   />
                 </Link>
             </li>
+            <li
+                className='-mt-4' >
+                <SuprSendInbox
+                workspaceKey= "CYJHJFdKTID2k1izkB8E"
+                subscriberId= "GImhKczMpNNVWfYzgVN3JudrSC8AzS1OlQG5JU5wtY0"
+                distinctId= "hello"
+                />
+            </li>
 
             <li 
               className='inline mr-5
-                         xl:mr-[15%]' >
+                         xl:mr-[8%]' >
                 <span className=' bg-[#efe6e0] px-2.5 py-2 rounded-full 
                                     hover:bg-opacity-60 transition-colors duration-300 ease-in-out '>
                 <Link onClick={scrollToTop} >
@@ -185,20 +196,16 @@ const Navbar = () => {
                </Link>
                </span>
             </li>
-            {/* <li>
-                <SuprSendInbox
-                workspaceKey= "CYJHJFdKTID2k1izkB8E"
-                subscriberId= "GImhKczMpNNVWfYzgVN3JudrSC8AzS1OlQG5JU5wtY0"
-                distinctId= "hello"
-                />
-            </li> */}
         </ul>        
       </div>
      
       {isOpen && <div 
-          className="fixed top-0 right-0 w-[400px] h-[100%] bg-[#FFFFFF] p-5 z-2">
+          className="fixed top-0 right-0 w-[100%] h-[100%] bg-[#FFFFFF] p-5
+                     sm:w-[400px] "
+          style={{zIndex:'1000'}} >
+          
         <WishlistPanel />
-      </div>}
+      </div>} 
 
     </div>
   )
