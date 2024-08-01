@@ -11,12 +11,12 @@ import debounce from 'lodash.debounce';
 import SuprSendInbox from '@suprsend/react-inbox'
 import 'react-toastify/dist/ReactToastify.css' 
 
-// add to your react component
-<SuprSendInbox
-  workspaceKey= "KuM1eXvnukphS3JzHD02"
-  subscriberId= "OGDv9D-9BIKG20iYtoFRzQBZ5MKlkmA4sVnMWs6wyAo"
-  distinctId= "test123"
-/>
+// add to your react component NOTE: THIS IS FOR DEVELOPMENT AND NOT FOR DEPLOYED VERSION
+{/* <SuprSendInbox
+  workspaceKey= "CYJHJFdKTID2k1izkB8E"
+  subscriberId= "YHLD4rzhh15kJVbSza73ZVe_gsySvXBZLzx743YIj_U"
+  distinctId= "vedanshm2001@gmail.com"
+/> */}
 
 
 
@@ -177,10 +177,10 @@ const Navbar = () => {
             <li
                 className='-mt-4' >
                 <SuprSendInbox
-                workspaceKey= "CYJHJFdKTID2k1izkB8E"
-                subscriberId= "GImhKczMpNNVWfYzgVN3JudrSC8AzS1OlQG5JU5wtY0"
-                distinctId= "hello"
-                />
+                workspaceKey= "KuM1eXvnukphS3JzHD02"
+                subscriberId= "OGDv9D-9BIKG20iYtoFRzQBZ5MKlkmA4sVnMWs6wyAo"
+                distinctId= "test123"
+            /> 
             </li>
 
             <li 
