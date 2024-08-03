@@ -7,17 +7,11 @@ import WishlistPanelContext from '../../context/WishlistPanleslider/WishlistPane
 import WishlistPanel from '../WishlistsPanel/WishlistPanel'
 import { items } from '../Data'
 import debounce from 'lodash.debounce';
+import WishlistContext from '../../context/WishlistContext/WishlistContext'
 
 import SuprSendInbox from '@suprsend/react-inbox'
 import 'react-toastify/dist/ReactToastify.css' 
-
-// add to your react component NOTE: THIS IS FOR DEVELOPMENT AND NOT FOR DEPLOYED VERSION
-{/* <SuprSendInbox
-  workspaceKey= "CYJHJFdKTID2k1izkB8E"
-  subscriberId= "YHLD4rzhh15kJVbSza73ZVe_gsySvXBZLzx743YIj_U"
-  distinctId= "vedanshm2001@gmail.com"
-/> */}
-
+import CartContext from '../../context/CartContext'
 
 
 
@@ -25,9 +19,11 @@ const scrollToTop = () => {
   window.scrollTo(0, 0)
 }
 
-const Navbar = () => {  
+const Navbar = ({scrollToSection, blogsection, footersection}) => {  
   const [ query, setQuery ] = useState("");
   const {isOpen, setIsOpen} = useContext(WishlistPanelContext)
+  const {wishlist} = useContext(WishlistContext)
+  const {cart} = useContext(CartContext)
 
   const filteredProd = query? items.filter((item) => item.title.toLowerCase().includes(query)) : [];
 
@@ -72,30 +68,24 @@ const Navbar = () => {
             </Link>
             </li>
 
-            <li>
-            <Link onClick={scrollToTop} 
-              className='text-sm text-[#24262b]
+            <li onClick={() => scrollToSection(blogsection)} 
+              className='text-sm text-[#24262b] cursor-pointer
                          hover:text-opacity-70 transition-colors duration-200 ease-in-out' >
               BLOG 
               <FontAwesomeIcon icon={faAngleDown} 
               className='text-xs font-thin ml-1' size="3xs" />
-            </Link>
             </li>
 
-            <li>
-            <Link onClick={scrollToTop} 
+            <li onClick={() => scrollToSection(footersection)}
               className='text-sm text-[#24262b]
                          hover:text-opacity-70 transition-colors duration-200 ease-in-out' >
               ABOUT US
-            </Link>
             </li>
 
-            <li>
-            <Link onClick={scrollToTop} 
+            <li onClick={() => scrollToSection(footersection)}
               className='text-sm text-[#24262b]
                          hover:text-opacity-70 transition-colors duration-200 ease-in-out' >
               CONTACT US
-            </Link>
             </li>
           </ul>
        </div>
@@ -141,41 +131,51 @@ const Navbar = () => {
         
         
         <ul 
-          className='list-none p-0 pt-1 pl-2 mt-2 w-[60%] flex justify-end
-                     lg:w-[40%]
+          className='list-none p-0 pt-1 mt-2 w-[60%] flex justify-end
+                     lg:w-[45%]
                      lg:ml-5
-                     xl:ml-2' >
+                     xl:ml-3' >
 
             <li 
-              className='inline mr-5
+              className='inline mr-5 mt-1
                            lg:hidden '>
               <FontAwesomeIcon icon={faMagnifyingGlass} />
 
             </li>
 
             <li 
-              className='inline mr-5
-                         xl:mr-[12%]' >
+              className='inline mr-5 mt-1
+                         xl:mr-[15%]' >
                 <Link onClick={handleWishlistPanel} >
                   <FontAwesomeIcon icon={faHeart} 
-                  className='font-lg text-[#24262b]
+                  className='font-lg text-[#24262b] text-xl absolute
+                             lg:text-[22px]
                          hover:text-opacity-70 transition-colors duration-200 ease-in-out'
                  />
+            <span className='relative top-3 left-3 h-4 w-4 rounded-full flex items-center justify-center text-white bg-green-500 text-xs' 
+            >
+              {wishlist.length}
+            </span>
                 </Link>
             </li>
 
             <li 
-              className='inline mr-5
-                         xl:mr-[12%]' >
+              className='inline mr-5 mt-1
+                         xl:mr-[15%]' >
                 <Link onClick={scrollToTop} to='/cartpage' >
                   <FontAwesomeIcon icon={faCartPlus} 
-                  className='font-lg text-[#24262b]
+                  className='font-lg text-[#24262b] text-xl absolute
+                             lg:text-[22px]
                          hover:text-opacity-70 transition-colors duration-200 ease-in-out' 
                   />
+            <span className='relative top-3 left-3 h-4 w-4 rounded-full flex items-center justify-center text-white bg-green-500 text-xs' 
+            >
+              {cart.length}
+            </span>
                 </Link>
             </li>
             <li
-                className='-mt-4' >
+                className='-mt-3 xl:mr-[5%]' >
                 <SuprSendInbox
                 workspaceKey= "KuM1eXvnukphS3JzHD02"
                 subscriberId= "OGDv9D-9BIKG20iYtoFRzQBZ5MKlkmA4sVnMWs6wyAo"
@@ -184,9 +184,9 @@ const Navbar = () => {
             </li>
 
             <li 
-              className='inline mr-5
+              className='inline mr-5 mt-1
                          xl:mr-[8%]' >
-                <span className=' bg-[#efe6e0] px-2.5 py-2 rounded-full 
+                <span className=' bg-[#efe6e0] px-2.5 py-2 rounded-full text-xl
                                     hover:bg-opacity-60 transition-colors duration-300 ease-in-out '>
                 <Link onClick={scrollToTop} >
                   <FontAwesomeIcon icon={faBars} 

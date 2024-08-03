@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import "./Homepage.css"
 import Navbar from '../../components/Navbar/Navbar.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
@@ -17,6 +17,14 @@ const scrollToTop = () => {
 }
 
 const Homepage = () => {
+  
+const blogsection = useRef(null);
+const footersection = useRef(null);
+
+const scrollToSection = (sectionRef) => {
+  sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+};
+
 
 
   return (
@@ -25,7 +33,7 @@ const Homepage = () => {
       
 
 
-      <Navbar />
+      <Navbar scrollToSection={scrollToSection} blogsection={blogsection} footersection={footersection} />
 
 
       <div className="bg-[url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448519/ecommerce/images/hero-slider/home-1/hero-slider-1_vqr99h.jpg')] 
@@ -39,7 +47,9 @@ const Homepage = () => {
             <br></br>
             Gold Award</h2>
             <Link onClick={scrollToTop} to='/ProductPage' >
-          <button className='mt-[40px] w-[130px] h-[44px] pt-[10px] pr-[15px] pb-[10px] pl-[1wa5px] border-2 border-solid border-[#24262b] rounded font-bold bg-[#fef5ef] cursor-pointer' >
+          <button className='mt-[40px] w-[130px] h-[44px] pt-[10px] pr-[15px] pb-[10px] pl-[1wa5px] border-2 border-solid border-[#24262b] rounded font-bold bg-[#fef5ef] cursor-pointer
+                             hover:bg-
+          ' >
             SHOP NOW</button>
           </Link>
         </div>
@@ -109,44 +119,46 @@ const Homepage = () => {
     </div>
 
 
-
-    <div className='items'>
-      <div className="items-leftdiv">
-      <div className="content-left">
-            <h4>Mini rechargeable Table Lamp - E216</h4>
-            <h5>WE DESIGN YOUR HOME</h5>
+    <div className='w-[86%] ml-[7%] mr-[7%] h-[385px] flex'>
+      <div className="w-[45%] h-[100%] mr-5 bg-[url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448498/ecommerce/images/banner/banner-style-1-img-1_i3a9tx.jpg')]
+                      bg-cover bg-center relative
+      ">
+      <div className="font-sans relative top-[30%] left-[35%] w-[60%]">
+            <h4 className='text-2xl font-extralight mb-3 tracking-wider' >Mini rechargeable Table Lamp - E216</h4>
+            <h5 className='text-base mb-[30px] text-[#777777] tracking-wider font-extralight' >WE DESIGN YOUR HOME</h5>
             <Link onClick={scrollToTop} to='/ProductPage' >
-            <button>DISCOVER NOW <FontAwesomeIcon icon={faArrowRight} /></button>
+            <button className='px-3 py-3 border-2 border-solid border-[#24262b] rounded tracking-wider' >DISCOVER NOW <FontAwesomeIcon icon={faArrowRight} /></button>
             </Link>
           </div>  
       </div>
-      <div className="items-rightdiv">
+    
+      <div className="w-[55%] h-[100%] ml-4 flex flex-col gap-[30px]">
 
-        <div className="items-rightdiv-top">
-        <div className="r-div1" style={{backgroundImage: `url(${imgURL})`}} >
-            <div className="content">
-            <h4 className='title' >Kitchen utensils</h4>
-            <Link onClick={scrollToTop} to='/productdetails/7' className='link-text' >SHOP NOW</Link>
+        <div className="h-[50%] flex gap-[30px]">
+        <div className="h-[100%] w-[50%] bg-cover bg-center" style={{backgroundImage: `url(${imgURL})`}} >
+            <div className="font-sans relative top-[30%] left-[60%] w-[40%]">
+            <h4 className='text-xl mb-[18px] font-thin leading-5 text-[#24262b]' >Kitchen utensils</h4>
+            <Link onClick={scrollToTop} to='/productdetails/7' className='no-underline text-base font-bold' >SHOP NOW</Link>
           </div>
         </div>
-        <div className="r-div2">
-        <div className="content">
-            <h4 className='title' >Sofas and Armchairs</h4>
+        <div className="h-[100%] w-[50%] bg-cover bg-center bg-[url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448500/ecommerce/images/banner/banner-style-2-img-2_chrq6g.jpg')]">
+        <div className="font-sans relative top-[30%] left-[60%] w-[40%]">
+            <h4 className='text-xl mb-[18px] font-thin leading-5 text-[#24262b]' >Sofas and Armchairs</h4>
             <Link onClick={scrollToTop}  to='/productdetails/8' className='link-text'>SHOP NOW</Link>
           </div>          
         </div>
         </div>
 
-        <div className="items-rightdiv-bottom">
-        <div className="r-div3">
-        <div className="content">
-            <h4 className='title' >Chair & Bar stools</h4>
+        <div className="h-[50%] flex gap-[30px]">
+        <div className="h-[100%] w-[50%] bg-cover bg-center bg-[url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448501/ecommerce/images/banner/banner-style-2-img-3_psifln.jpg')]">
+        <div className="font-sans relative top-[30%] left-[60%] w-[40%]">
+            <h4 className='text-xl mb-[18px] font-thin leading-5 text-[#24262b]' >Chair & Bar stools</h4>
             <Link onClick={scrollToTop}  to='/productdetails/9' className='link-text'>SHOP NOW</Link>
           </div>          
         </div>
-        <div className="r-div4">
-        <div className="content">
-            <h4 className='title' >Interior lighting</h4>
+        <div className="h-[100%] w-[50%] bg-cover bg-center bg-[url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448501/ecommerce/images/banner/banner-style-2-img-4_mjrdre.jpg')]">
+        <div className="font-sans relative top-[30%] left-[60%] w-[40%]">
+            <h4 className='text-xl mb-[18px] font-thin leading-5 text-[#24262b]' >Interior lighting</h4>
             <Link onClick={scrollToTop}  to='/productdetails/10' className='link-text'>SHOP NOW</Link>
           </div>
         </div>
@@ -541,7 +553,9 @@ const Homepage = () => {
     {/* the blog posts.................................................................... */}
 
 
-<div className="master-the-latest-blog">
+<div className="master-the-latest-blog" 
+     ref={blogsection} 
+>
 
 
 <div className='the-latest-blog' >
@@ -641,7 +655,7 @@ const Homepage = () => {
 
 {/* importing footer section............................................................. */}
 
-<Footer/>
+<Footer footersection={footersection} />
 
 
     </>

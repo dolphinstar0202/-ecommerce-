@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF,faInstagram,faTwitter,faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
-const Footer = () => {
+const Footer = ({footersection}) => {
   return (
     <>
-    <div className="master-footer">
+    <div className="master-footer" ref={footersection}>
         <div className="details-div">
         <div className="details">
             <div className="details-inside">

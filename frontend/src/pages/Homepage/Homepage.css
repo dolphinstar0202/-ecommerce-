@@ -96,7 +96,7 @@ html, body {
 
 
 /* items/products displayed */
-
+/* 
 .items{
     width: 86%;
     margin-left: 7%;
@@ -104,8 +104,8 @@ html, body {
     height: 385px;
     display: flex;
     
-}
-.items-leftdiv{
+} */
+/* .items-leftdiv{
     width: 45%;
     height: 100%;
     margin-right: 15px;
@@ -113,9 +113,9 @@ html, body {
     background-size: cover;
     background-position: center;    
     position: relative;
-}
+} */
 
-.content-left{
+/* .content-left{
     font-family: "Open Sans", sans-serif;
     position: relative;
     top: 30%;
@@ -128,8 +128,8 @@ html, body {
     font-weight: 200;
     margin-bottom: 11px;
     letter-spacing: .12em;
-}
-.content-left h5{
+} */
+/* .content-left h5{
     font-size: 16px;
     margin-bottom: 30px;
     color: #777777;
@@ -143,10 +143,10 @@ html, body {
     border-radius: 4px;
     font-weight: 600;
     letter-spacing: .12em;
-}
+} */
 
 
-.items-rightdiv{
+/* .items-rightdiv{
     width: 55%;
     height: 100%;
     margin-left: 15px;
@@ -160,11 +160,11 @@ html, body {
     height: 50%;
     display: flex;
     gap: 30px;
-}
-.r-div1{
+} */
+/* .r-div1{
     height: 100%;
     width: 50%;
-    /* background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448500/ecommerce/images/banner/banner-style-2-img-1_c31a7t.jpg'); */
+    background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448500/ecommerce/images/banner/banner-style-2-img-1_c31a7t.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -175,38 +175,38 @@ html, body {
     background-size: cover;
     background-position: center;
     
-}
-.items-rightdiv-bottom{
+} */
+/* .items-rightdiv-bottom{
     height: 50%;
     display: flex;
     gap: 30px;
-}
-.r-div3{
+} */
+/* .r-div3{
     height: 100%;
     width: 50%;
     background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448501/ecommerce/images/banner/banner-style-2-img-3_psifln.jpg');
     background-size: cover;
     background-position: center;
     
-}
-.r-div4{
+} */
+/* .r-div4{
     height: 100%;
     width: 50%;
     background-image: url('https://res.cloudinary.com/dhrugutmv/image/upload/v1718448501/ecommerce/images/banner/banner-style-2-img-4_mjrdre.jpg');
     background-size: cover;
     background-position: center;
    
-}
+} */
 
-.content{
+/* .content{
     font-family: "Open Sans", sans-serif;
     position: relative;
     top: 30%;
     left: 60%;
     width: 40%;
 
-}
-.title{
+} */
+/* .title{
     font-size: 21px;
     margin-bottom: 18px;
     font-weight: 100;
@@ -218,7 +218,7 @@ html, body {
     text-decoration: none;
     font-size: 15px;
     font-weight: 700;
-}
+} */
 
 
 
